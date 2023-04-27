@@ -4,6 +4,7 @@ import pandas as pd
 import random as rd
 import re 
 from sys import exit
+import pickle
 
 pd.options.mode.chained_assignment = None
 
@@ -29,7 +30,7 @@ def FreeEntVib(T,Evib):
 	return F,termvib,termentropy
 
 def write_vib_entropy(Vibenefile):
-	T = 273.15  #K
+	#T = 298  #K
 	head_file = "Entropy_correction"
 	dictinp = {}
 	dfvib,dictvib = VibEneCollect(Vibenefile,dictinp)
@@ -57,7 +58,7 @@ def EneCorrectVib(Vibenefile,dfEads,Eslab):
 	#site-vibrational energy.
 	print("The vib ene data is taken from"+Vibenefile)
 	PHlst = ["PH2","PH3"] # update this to more num if needed
-	T = 273.15 #K The entropy values are for STP
+	#T = 298 #K The entropy values are for STP
 	dictinp = {}
 	dfvib,dictvib = VibEneCollect(Vibenefile,dictinp) #CALL FUNCTION
 	remkeys = dictvib.keys()
@@ -255,17 +256,20 @@ def write_AvgEads(input_file,Eslab,system,Vibenefile):
 def write_diffGibbs(input_file,Eslab,system,Vibenefile):
 	df = pd.read_csv(input_file,skiprows=1,sep=" ",\
 	names=('nH','Eads','Remarks'))
-	df2,df3 = cleandf(df,Eslab,Vibenefile,True)
+	dfcp = df.copy()
+	dfpermucp = df.copy()
+	df2,df3 = cleandf(dfcp,Eslab,Vibenefile,True)
+	df2permu,df3permu=cleandf(dfcp,Eslab,Vibenefile,False)
 	df4 = diffGibbs(df2,df3,1)
-	df5 = diffGibbs(df2,df3,2)
+	df5 = diffGibbs(df2permu,df3permu,1)
 	plotdGibbs(df4,input_file,system)
-	plotdGibbs(df5,"2"+input_file,system)
+	plotdGibbs(df5,"permu"+input_file,system)
 	plotdAdsEne(df4,input_file,system)
 	fname  = input_file.split(".")
 	svname = "".join(fname[:-1])+savedGib
 	df4.to_csv(svname,sep='\t',index=False,\
 	float_format='%5.8f')
-	df5.to_csv("2"+svname,sep='\t',index=False,\
+	df5.to_csv("permu"+svname,sep='\t',index=False,\
 	float_format='%5.8f')
 	print("\n")
 	print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
@@ -359,7 +363,7 @@ def plotdGibbs(df,input_file,system):
 	plt.plot(x,[0.1 for i in range(len(x))],"--",color="k")
 	plt.plot(x,[0 for i in range(len(x))],"--",color="k")
 	plt.plot(x,[-0.1 for i in range(len(x))],"--",color="k")
-	plt.plot(x,y,'o')
+	#plt.plot(x,y,'o')
 	df1 = df.sort_values(by=["nH","diffGibbs"])
 	df2 = df1.drop_duplicates(subset=["nH"],\
         keep='first',ignore_index=True)
@@ -374,7 +378,7 @@ def plotdGibbs(df,input_file,system):
 		xytext=xytxt,ha='center',va='bottom',\
 		arrowprops=dict(arrowstyle='->', connectionstyle='arc3,rad=0.2'))
 	plt.xlabel("Adding nth Hydrogen")
-	#plt.xlim([x[0],x[-1]])
+	#plt.ylim([-1.2,0.7])
 	plt.ylabel("Differential Gibbs Free energy (eV)")
 	plt.title(system+'\nThe labels represents n and n-1 position of H')
 	plt.savefig(svname,format="png",dpi=500)
@@ -416,16 +420,17 @@ def plotdAdsEne(df,input_file,system):
 #DEFINE CONSTANTS OF CALCULATION
 #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+T = 298 # K. This is the simulation temperature.
 EH2        = -6.77025412   #-6.77024788 #eV
 EslabAA7   = -741.72008203 #-741.72017502  #eV
 EslabA7P   = -767.48135606  #eV 
-vibTScorre = 0.24 #eV
-TScorr	   = -0.20 #eV T = 293.15K
-dZPE       = 0.04 #eV
+#vibTScorre = 0.24 #eV
+#TScorr	   = -0.20 #eV T = 293.15K
+#dZPE       = 0.04 #eV
 eU = 0 #eV value for potential
-EH2vib = 0.536823477 #eV
-entrEH2= 0.001354434 #0.001464 # eV/K at STP (273.15K) 
-EH2tot = EH2 + EH2vib - (273.15)*entrEH2
+EH2vib = 0.536823477 #eV THIS IS VIB-ENT ENERGY AT 298 K
+entrEH2= 0.00135317888 # eV/K per H2 at 298 K JANAF Thermochemical tables 2ed. 
+EH2tot = EH2 + EH2vib - (298)*entrEH2
 
 #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 #DEFINE FILES AND STORAGE TO BE USED
