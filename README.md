@@ -14,7 +14,10 @@ This file should contain the vibrational energy data needed for the `VibEneColle
 
 **Example format:**
 
-0.123 0.456 0.789 #remark1
+VibEne (eV) remarks
+
+0.07306871 0.0423713665 0.040057513 #hol
+
 
 
 
@@ -25,6 +28,7 @@ This file should contain the adsorption energy data needed for the `AvgEads`, `d
 **Example format:**
 
 nH,Eads,Remarks
+
 1,0.123,remark1
 
 
