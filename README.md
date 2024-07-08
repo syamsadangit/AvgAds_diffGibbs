@@ -22,9 +22,9 @@ This file should contain the vibrational energy data needed for the `VibEneColle
 This file should contain the adsorption energy data needed for the `AvgEads`, `diffGibbs`, `cleandf`, `write_AvgEads`, and `write_diffGibbs` functions. The file should be a CSV file with three columns: `nH`, `Eads`, and `Remarks`.
 
 **Example format:**
-'''nH,Eads,Remarks
+```nH,Eads,Remarks
 1,0.123,remark1
-2,0.456,remark2'''
+2,0.456,remark2```
 
 ### Reference Slab Energy
 
