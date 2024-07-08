@@ -1,0 +1,2 @@
+/cluster/software/SciPy-bundle/2021.05-intel-2021a/lib/python3.9/site-packages/scipy/optimize/minpack.py:828: OptimizeWarning: Covariance of the parameters could not be estimated
+  warnings.warn('Covariance of the parameters could not be estimated',

@@ -5,6 +5,10 @@ import random as rd
 import re 
 from sys import exit
 import pickle
+import warnings
+
+warnings.filterwarnings("default", ".*", FutureWarning, r".*", 0)
+
 
 pd.options.mode.chained_assignment = None
 
@@ -13,6 +17,9 @@ pd.options.mode.chained_assignment = None
 #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 def iseven(num):
+	#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	#CHECKS IF num IS EVER OR NOT AND RETURNS condition
+	#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	if (num % 2 == 0):
 		condition = True
 	else:
@@ -20,56 +27,82 @@ def iseven(num):
 	return condition
 
 def FreeEntVib(T,Evib):
-	kb = 8.617333262e-05 #eV/K 
-	B = 1/(kb*T)
-	x = B*Evib
-	exp = np.exp(2*x)
-	termvib     = Evib + (2*Evib/(exp - 1))
-	termentropy = (1/B)*( (2*x/(exp - 1)) - np.log(1-(1/exp)) )   
-	F = termvib - termentropy
-	return F,termvib,termentropy
+    #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    #INPUT TEMPERATURE T AND VIBRATIONAL ENERGY EVIB
+    #OUTPUT FREE ENERGY OF VIBRATION AND VIB TERM, ENT TERM
+    #FOR REF https://doi.org/10.1103/PhysRevB.65.035406
+    #THE EQUATIONS ARE MODIFIED SO THAT EVIB = 0.5*HBAR*OMEGA
+    #EVIB IS IN EV UNITS
+    #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    kb = 8.617333262e-05 #eV/K 
+    B = 1/(kb*T)
+    x = B*Evib
+    print(Evib)
+    print(type(Evib))
+    exp = np.exp(2*x)
+    termvib     = Evib + (2*Evib/(exp - 1))
+    termentropy = (1/B)*( (2*x/(exp - 1)) - np.log(1-(1/exp)) )   
+    F = termvib - termentropy
+    #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    #THE BELOW SUMMATION IS INTRODUCED TO SUM OVER THE OMEGA
+    #NOW THE QUANTITIES ARE ONLY FUNCTION OF TEMPERATURE. 
+    #FOR DIFFERENT TEMPERATURES, RUN THIS FUNCTION IN LOOP.
+    #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    F = np.sum(F)
+    termvib = np.sum(termvib)
+    termentropy = np.sum(termentropy)
+    return F,termvib,termentropy
 
 def write_vib_entropy(Vibenefile):
-	#T = 298  #K
-	head_file = "Entropy_correction"
-	dictinp = {}
-	dfvib,dictvib = VibEneCollect(Vibenefile,dictinp)
-	col = dfvib.columns
-	Evib = dfvib[col[0]].copy() #SettingWithCopyWarning
-	Free_energy_entropy,termvib,termentropy = FreeEntVib(T,Evib)
-	#print(Free_energy_entropy)
-	#print(Evib)
-	dfvib.insert(1,'Entrene',termentropy,True)
-	dfvib.insert(2,'tot_corr',Free_energy_entropy,True)
-	#print(dfvib)
-	fname  = Vibenefile.split(".")
-	svname = head_file+"".join(fname[:-1])+".dat"
-	dfvib.to_csv(svname,sep='\t',index=False,\
-	float_format='%5.8f')
-	return
+    #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    #WRITING VIB FREE ENERGY AND ENT DUE TO VIB TO FILE
+    #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    head_file = "Entropy_correction"
+    dictinp = {}
+    dfvib1,dictvib1 = VibEneCollect(Vibenefile,dictinp)
+    dictvib2 = {}
+    remkeys = dictvib1.keys()
+    columns = ["VibEne_V", "Entrene_S", "Fene_V-TS", "Remarks"]
+    dictvib2 = {}
+    VEne = []
+    SEne = []
+    FEne = []
+    for ky in remkeys:
+        print(ky)
+        Evib = dictvib1[ky]
+        print(Evib)
+        Fene,V,E =  FreeEntVib(T,Evib) #CALL FUNCTION
+        VEne.append(V)
+        SEne.append(E)
+        FEne.append(Fene)
+    values = [VEne, SEne, FEne, remkeys]
+    for i in range(len(columns)):
+       dictvib2[columns[i]] = values[i]  
+    dfvib2 = pd.DataFrame(dictvib2, columns = columns)
+    fname  = Vibenefile.split(".")
+    svname = head_file+"".join(fname[:-1])+".dat"
+    dfvib2.to_csv(svname,sep='\t',index=False,\
+    float_format='%5.8f')
+    return
 	 
 			
 		
 
 def EneCorrectVib(Vibenefile,dfEads,Eslab):
-	#This function takes the energy of the 
-	#system after optimisation, Energy of 
-	#desorbed slab and add the corresponding 
-	#site-vibrational energy.
+	#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	#THIS FUNC TAKES ENERGY OF THE OPTIMISED ADSORBED SLAB
+	#ENERGY OF REFERENCE SLAB, VIB ENERGY FILE 
+	#AND ADD THE CORRESPONDING SITE-VIBRATIONAL ENERGY
+	#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	print("The vib ene data is taken from"+Vibenefile)
-	PHlst = ["PH2","PH3"] # update this to more num if needed
-	#T = 298 #K The entropy values are for STP
+	PHlst = ["PH2","PH3"] # UPDATE THIS TO MORE CONFIG IF NEEDED
 	dictinp = {}
 	dfvib,dictvib = VibEneCollect(Vibenefile,dictinp) #CALL FUNCTION
 	remkeys = dictvib.keys()
-	#print(dictvib)
 	for ky in remkeys:
 		Evib = dictvib[ky]
+		print(type(Evib))
 		dictvib[ky],V,E =  FreeEntVib(T,Evib) #CALL FUNCTION
-	#print(dictvib)
-	#col = dfvib.columns
-	#Evib = dfvib[col[0]]
-	#Free_energy_entropy,termvib,termentropy = FreeEntVib(T,Evib)
 
 	if Eslab == EslabA7P:
 		Eslab = Eslab+dictvib["Ni3P2+4P"]
@@ -78,7 +111,6 @@ def EneCorrectVib(Vibenefile,dfEads,Eslab):
 	else:
 		print("Check the slab energy and vibrational energies") 
 	dfeads = dfEads.copy()
-	#print("Before Corection ----> ",dfeads)
 	for i in range(len(dfeads.iloc[:,2])):
 		rem = dfeads.iloc[i,2] #col 2 is Remarks
 		print("__________________________________________________")
@@ -114,32 +146,59 @@ def EneCorrectVib(Vibenefile,dfEads,Eslab):
 			else:
 				print("The configuration "+elem+" has no vibrational energy in the file "+Vibenefile)
 		print("--------------------------------------------------")
-	#print("After Corection ----> ",dfeads)
 	return dfeads,Eslab
 
-
 def VibEneCollect(input_file,dict):
-	col1 = "VibEne"
-	col2 = "Remarks"
-	df = pd.read_csv(input_file,skiprows=1,sep=" ",\
-		names=(col1,col2))
-	for i in range(len(df[col2])):
-		key  = df[col2][i].split("#")[1]
-		dict["{}".format(key)] = df[col1][i]
-	print(" ")
-	print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
-	print("Vibrational Energy Colleced from {}".format(input_file))
-	print(dict)
-	print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
-	print(" ")
-	return df,dict
+    #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    #READS INPUT FILE CONTAINIG VIB ENERGY AS DF AND DICT
+    #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    col1 = "VibEne"
+    col2 = "Remarks"
+    with open(input_file) as file:
+        next(file)
+        for line in file:
+            dat = [elem.rstrip() for elem in line.split()]
+            key = dat.pop().split("#")[1] #removed last element from dat
+            dict[key] = np.array([round(float(i), 3) for i in dat])
+    rem = dict.keys()
+    ene = dict.values()
+    df = pd.DataFrame(list(zip(ene, rem)), columns=[col1, col2])
+    print(" ")
+    print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
+    print("Vibrational Energy Colleced from {}".format(input_file))
+    print(df)
+    print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
+    print(" ")
+    return df,dict
+
+
+#def VibEneCollect(input_file,dict):
+#    #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+#    #READS IN INPUT FILE CONTAINIG VIB ENERGY AS DF AND DICT 
+#    #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+#    col1 = "VibEne"
+#    col2 = "Remarks"
+#    df = pd.read_csv(input_file,skiprows=1,sep=" ",\
+#        names=(col1,col2))
+#    for i in range(len(df[col2])):
+#        key  = df[col2][i].split("#")[1]
+#        dict["{}".format(key)] = df[col1][i]
+#    print(" ")
+#    print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
+#    print("Vibrational Energy Colleced from {}".format(input_file))
+#    print(dict)
+#    print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
+#    print(" ")
+#    return df,dict
 
 
 def AvgEads(df,Eslab,Vibenefile):
-	#Calculates Avg Ads Energy
-	#avgEads = (E_slab+H - E_slab - (1/2 * n * EH2) )
-	#df1 is Avg ads energy (no correction)
-	#df2 is Gibbs free energy per H (Vib-TS corrected)
+	#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	#CALCULATES ADS ENERGY PER H AND GIBBS FREE ENERGY PER H
+	#ADS_ENE_PER_H  = (E_slab+H - E_slab - (1/2 * n * EH2) )
+	#DF1 IS ADS ENERGY PER H (NO CORRECTION)
+	#DF2 IS GIBBS FREE ENERGY PER H (VIB-TS CORRECTED)
+	#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	df1 = df.copy()
 	y = (df1.Eads - Eslab - (df1.nH*EH2*0.5))/df1.nH
 	dfeads = df.copy()
@@ -150,17 +209,18 @@ def AvgEads(df,Eslab,Vibenefile):
 	return df1,df2 
 
 def diffGibbs(df1,df2,neibr):
-	# Calculates the differential Gibbs free energy
-	#DelGn=En - En-1 - 0.5*EH2 + 0.24 + e*U (U=0 here)
-	#df1 - without ref ene val. df2 - with ref ene val 
-	#use df1,df2 = cleandf(df) to obtain df1 and df2
+	#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	#CALCULATES THE DIFFERENTIAL GIBBS FREE ENERGY
+	#USE DF1,DF2 = CLEANDF(DF) TO OBTAIN DF1 AND DF2
+	#DF1 & DF2 ARE ADS ENERGY VALUES AFTER CORRECTIONS
+	#DF1 - WITHOUT REF ENE VAL. DF2 - WITH REF ENE VAL 
+	#DELGN=EN - EN-1 - 0.5*EH2TOT + E*U (U=0 HERE)
+	#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	dropind = len(df2.index) - 1
 	dfn     = df1.copy()
 	dfn_1   = df2.copy()
 	arn     = dfn.values.tolist()   
 	arn_1   = dfn_1.values.tolist() 
-	#vibTScorre = dZPE - TScorr
-	#terms   = (-0.5*EH2tot) - TScorr + eU
 	terms   = (-0.5*EH2tot*neibr) + eU
 	dgibbs  = []
 	for i in arn:
@@ -179,6 +239,8 @@ def diffGibbs(df1,df2,neibr):
 			Ejn_1  = j[1]
 			remin  = i[2]
 			remjn_1= j[2]
+			#print(cond1, cond2)
+			#print(nHin,nHjn_1,nHin-nHjn_1,neibr)
 			if(cond1 and cond2 and (nHin-nHjn_1)==neibr):
 				dE   = Ein - Ejn_1 + terms
 				rem  = remin+","+remjn_1 
@@ -190,45 +252,53 @@ def diffGibbs(df1,df2,neibr):
 	 
 
 def cleandf(df,Eslab,Vibenefile,rem_avail=False):
-	# Finds the minimmum energy adsorption configuration
-	# for a given number of Hydrogen. Then it discards 
-	# all the configuration except the minimum energy 
-	#configuration
-	E_RT = 0 #0.03  
-	df3 = df.copy()
-	df3,Eslab = EneCorrectVib(Vibenefile,df3,Eslab)
-	print(df3)
-	if (rem_avail):
-		drpind = df3.loc[ ~df3["Remarks"].isin(rem) ].index	
-		df3.drop(drpind,inplace=True)
-	print(df3)
-	dfsort = df3.sort_values(by=["nH","Eads"])
-	#dupbool = dfsort.duplicated(subset=["nH"])
-	#dfdrop = dfsort.drop_duplicates(subset=["nH"],\
-	#keep='first',ignore_index=True)
-	#print(dfdrop)
-	dfdrop = dfsort.copy()
-	nHEads0  = dfdrop[["nH","Eads","Remarks"]].values.tolist()
-	nHEads1  = dfsort[["nH","Eads","Remarks"]].values.tolist()
-	nHEads2  = []
-	for i in nHEads0:
-		for j in nHEads1:
-			nHi0 = i[0]
-			nHj1 = j[0]
-			Ei0  = i[1]
-			Ej1  = j[1]
-			remi0= i[2]
-			remj1= j[2]
-			if(nHi0==nHj1):
-				if(abs(Ej1-Ei0)<=E_RT):
-					updt = [nHj1,Ej1,remj1]
-					nHEads2.append(updt)
-	dfdr1 = pd.DataFrame(nHEads2,columns=["nH","Eads","Remarks"])
-	col = df3.columns
-	dfref = pd.DataFrame([[0 ,Eslab,"#Refene"]],\
-	columns = col,index = ["ref"] )
-	dfclean = dfref.append(dfdr1,ignore_index=True)
-	return dfdr1, dfclean
+    # Finds the minimmum energy adsorption configuration
+    # for a given number of Hydrogen. Then it discards 
+    # all the configuration except the minimum energy 
+    #configuration
+    E_RT = 0 #0.03  
+    df3 = df.copy()
+    df3,Eslab = EneCorrectVib(Vibenefile,df3,Eslab)
+    if(rem_avail):
+        #REMG IS A GLOBAL VARIABLE DEFINED IN FUNCTION plotAvgAdsene
+        drpind = df3.loc[ ~df3["Remarks"].isin(remG) ].index	
+        df3.drop(drpind,inplace=True)
+    dfsort = df3.sort_values(by=["nH","Eads"])
+    #dupbool = dfsort.duplicated(subset=["nH"])
+    #dfdrop = dfsort.drop_duplicates(subset=["nH"],\
+    #keep='first',ignore_index=True)
+    #print(dfdrop)
+    dfdrop = dfsort.copy()
+    nHEads0  = dfdrop[["nH","Eads","Remarks"]].values.tolist()
+    nHEads1  = dfsort[["nH","Eads","Remarks"]].values.tolist()
+    nHEads2  = []
+    for i in nHEads0:
+        for j in nHEads1:
+            nHi0 = i[0]
+            nHj1 = j[0]
+            Ei0  = i[1]
+            Ej1  = j[1]
+            remi0= i[2]
+            remj1= j[2]
+            if(nHi0==nHj1):
+                if(abs(Ej1-Ei0)<=E_RT):
+                    updt = [nHj1,Ej1,remj1]
+                    nHEads2.append(updt)
+    dfdr1 = pd.DataFrame(nHEads2,columns=["nH","Eads","Remarks"])
+    #print("cleandf")
+    #print(dfsort)
+    #print(dfdr1)
+    col = df3.columns
+    dfref = pd.DataFrame([[0 ,Eslab,"#Refene"]],\
+    columns = col,index = ["ref"] )
+    dfclean = pd.concat([dfref,dfdr1],ignore_index=True)
+    print(" ")
+    print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
+    print(dfclean)
+    print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
+    print(" ")
+    #dfclean = dfref.append(dfdr1,ignore_index=True)
+    return dfdr1, dfclean
 
 def write_AvgEads(input_file,Eslab,system,Vibenefile):
 	df = pd.read_csv(input_file,skiprows=1,sep=" ",\
@@ -281,8 +351,9 @@ def write_diffGibbs(input_file,Eslab,system,Vibenefile):
 	return
 
 def plotAvgAdsene(dfEads,df,input_file,system):
-	global rem
+	global remG
 	fname  = input_file.split(".")
+	minsvname = "".join(fname[:-1])+".dat"
 	svname = "".join(fname[:-1])+pltEavg 
 	pos = 50
 	choice = np.arange(1,pos,1) 
@@ -300,7 +371,11 @@ def plotAvgAdsene(dfEads,df,input_file,system):
         keep='first',ignore_index=True)
 	#print(df2)
 	xmin,ymin,rem = df21["nH"], df21["Eadsavg"] ,df21["Remarks"]
-	xmin2,ymin2   = df2.nH, df2.Eadsavg
+	df21.to_csv("AdsFenemin"+minsvname,sep='\t',index=False,\
+        float_format='%5.8f')
+	xmin2, ymin2, remG   = df2.nH, df2.Eadsavg, df2.Remarks
+	df2.to_csv("GibbsFenemin"+minsvname,sep='\t',index=False,\
+        float_format='%5.8f')
 	#vibTScorre = dZPE - TScorr
 	#ymin2 = ymin2 - TScorr +eU
 	ymin2 = ymin2 +eU
@@ -330,7 +405,7 @@ def plotAvgAdsene(dfEads,df,input_file,system):
 		x_extpl = np.linspace(5,60,1000)
 		#y_extpl = fit_fn(x_extpl)
 		#ax2.plot(x_extpl,y_extpl,alpha=0.1,linewidth=7)
-		ax2.plot(x_extpl,model(x_extpl,*popt),alpha=0.3,linewidth=7)
+		ax2.plot(x_extpl,model(x_extpl,*popt),alpha=0.3,linewidth=7) #FOR FITTING THE CURVE UNCOMMENT THIS LINE
 		#ax2.plot(x_extpl,model2(x_extpl,*popt2),alpha=0.2,linewidth=10)
 	for i, txt in enumerate(rem):
 		xytxt=(20,-20)
@@ -340,7 +415,8 @@ def plotAvgAdsene(dfEads,df,input_file,system):
 		textcoords="offset points",rotation=90,\
 		xytext=xytxt,ha='center',va='bottom',\
 		arrowprops=dict(arrowstyle='->', connectionstyle='arc3,rad=0.2'))
-		ax2.annotate(txt,(xmin2[i],ymin2[i]),fontsize=6,\
+	for i, txtG in enumerate(remG):
+		ax2.annotate(txtG,(xmin2[i],ymin2[i]),fontsize=6,\
 		textcoords="offset points",rotation=90,\
 		xytext=xytxt,ha='center',va='bottom',\
 		arrowprops=dict(arrowstyle='->', connectionstyle='arc3,rad=0.2'))
@@ -363,7 +439,6 @@ def plotdGibbs(df,input_file,system):
 	plt.plot(x,[0.1 for i in range(len(x))],"--",color="k")
 	plt.plot(x,[0 for i in range(len(x))],"--",color="k")
 	plt.plot(x,[-0.1 for i in range(len(x))],"--",color="k")
-	#plt.plot(x,y,'o')
 	df1 = df.sort_values(by=["nH","diffGibbs"])
 	df2 = df1.drop_duplicates(subset=["nH"],\
         keep='first',ignore_index=True)
@@ -378,11 +453,9 @@ def plotdGibbs(df,input_file,system):
 		xytext=xytxt,ha='center',va='bottom',\
 		arrowprops=dict(arrowstyle='->', connectionstyle='arc3,rad=0.2'))
 	plt.xlabel("Adding nth Hydrogen")
-	#plt.ylim([-1.2,0.7])
 	plt.ylabel("Differential Gibbs Free energy (eV)")
 	plt.title(system+'\nThe labels represents n and n-1 position of H')
 	plt.savefig(svname,format="png",dpi=500)
-	#plt.show()
 	return
 
 def plotdAdsEne(df,input_file,system):
@@ -428,7 +501,7 @@ EslabA7P   = -767.48135606  #eV
 #TScorr	   = -0.20 #eV T = 293.15K
 #dZPE       = 0.04 #eV
 eU = 0 #eV value for potential
-EH2vib = 0.536823477 #eV THIS IS VIB-ENT ENERGY AT 298 K
+EH2vib = 0.26841  #eV THIS IS VIB-ENT FREE ENERGY AT 298 K
 entrEH2= 0.00135317888 # eV/K per H2 at 298 K JANAF Thermochemical tables 2ed. 
 EH2tot = EH2 + EH2vib - (298)*entrEH2
 

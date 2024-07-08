@@ -1,0 +1,1283 @@
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Vibrational Energy Colleced from AA7VibEneSite.dat
+                  VibEne   Remarks
+0  [0.073, 0.041, 0.041]       hol
+1  [0.082, 0.066, 0.035]  NiNibrdg
+2  [0.093, 0.052, 0.029]   NiPbrdg
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Vibrational Energy Colleced from AA7+PVibEneSite.dat
+                                              VibEne   Remarks
+0  [0.144, 0.03, 0.029, 0.024, 0.021, 0.021, 0.02...        0P
+1  [0.022, 0.021, 0.021, 0.02, 0.012, 0.012, 0.01...  Ni3P2+4P
+2  [0.147, 0.145, 0.066, 0.032, 0.029, 0.028, 0.0...       PH2
+3  [0.145, 0.143, 0.143, 0.065, 0.065, 0.06, 0.02...       PH3
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+The vib ene data is taken fromAA7VibEneSite.dat
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Vibrational Energy Colleced from AA7VibEneSite.dat
+                  VibEne   Remarks
+0  [0.073, 0.041, 0.041]       hol
+1  [0.082, 0.066, 0.035]  NiNibrdg
+2  [0.093, 0.052, 0.029]   NiPbrdg
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+<class 'numpy.ndarray'>
+[0.073 0.041 0.041]
+<class 'numpy.ndarray'>
+<class 'numpy.ndarray'>
+[0.082 0.066 0.035]
+<class 'numpy.ndarray'>
+<class 'numpy.ndarray'>
+[0.093 0.052 0.029]
+<class 'numpy.ndarray'>
+__________________________________________________
+		0 row Remarks =  #1@hol-20
+split remarks with H =  ['1@hol']
+split remarks =  ['1', 'hol']
+There are 1 no 				of H at the site  hol
+Vib ene to add = 0.15276036835879508
+Bef corr Eads = -785.56045194
+Aft corr Eads = -785.4076915716412
+Corrected Value = -785.4076915716412
+--------------------------------------------------
+__________________________________________________
+		1 row Remarks =  #1@NiPbrdg-20
+split remarks with H =  ['1@NiPbrdg']
+split remarks =  ['1', 'NiPbrdg']
+There are 1 no 				of H at the site  NiPbrdg
+Vib ene to add = 0.17069598601348535
+Bef corr Eads = -784.99648215
+Aft corr Eads = -784.8257861639865
+Corrected Value = -784.8257861639865
+--------------------------------------------------
+__________________________________________________
+		2 row Remarks =  #2@hol-20
+split remarks with H =  ['2@hol']
+split remarks =  ['2', 'hol']
+There are 2 no 				of H at the site  hol
+Vib ene to add = 0.30552073671759017
+Bef corr Eads = -789.6039905
+Aft corr Eads = -789.2984697632825
+Corrected Value = -789.2984697632825
+--------------------------------------------------
+__________________________________________________
+		3 row Remarks =  #3@hol-20
+split remarks with H =  ['3@hol']
+split remarks =  ['3', 'hol']
+There are 3 no 				of H at the site  hol
+Vib ene to add = 0.45828110507638525
+Bef corr Eads = -793.61876012
+Aft corr Eads = -793.1604790149237
+Corrected Value = -793.1604790149237
+--------------------------------------------------
+__________________________________________________
+		4 row Remarks =  #4@hol-20
+split remarks with H =  ['4@hol']
+split remarks =  ['4', 'hol']
+There are 4 no 				of H at the site  hol
+Vib ene to add = 0.6110414734351803
+Bef corr Eads = -797.59894
+Aft corr Eads = -796.9878985265648
+Corrected Value = -796.9878985265648
+--------------------------------------------------
+__________________________________________________
+		5 row Remarks =  #4@hol-1@NiPbrdg-20
+split remarks with H =  ['4@hol', '1@NiPbrdg']
+split remarks =  ['4', 'hol']
+There are 4 no 				of H at the site  hol
+Vib ene to add = 0.6110414734351803
+Bef corr Eads = -801.01087513
+Aft corr Eads = -800.3998336565649
+Corrected Value = -800.3998336565649
+split remarks =  ['1', 'NiPbrdg']
+There are 1 no 				of H at the site  NiPbrdg
+Vib ene to add = 0.17069598601348535
+Bef corr Eads = -800.3998336565649
+Aft corr Eads = -800.2291376705514
+Corrected Value = -800.2291376705514
+--------------------------------------------------
+__________________________________________________
+		6 row Remarks =  #4@hol-1@NiPbrdg-5
+split remarks with H =  ['4@hol', '1@NiPbrdg']
+split remarks =  ['4', 'hol']
+There are 4 no 				of H at the site  hol
+Vib ene to add = 0.6110414734351803
+Bef corr Eads = -801.01091079
+Aft corr Eads = -800.3998693165648
+Corrected Value = -800.3998693165648
+split remarks =  ['1', 'NiPbrdg']
+There are 1 no 				of H at the site  NiPbrdg
+Vib ene to add = 0.17069598601348535
+Bef corr Eads = -800.3998693165648
+Aft corr Eads = -800.2291733305514
+Corrected Value = -800.2291733305514
+--------------------------------------------------
+__________________________________________________
+		7 row Remarks =  #4@hol-2@NiPbrdg-20
+split remarks with H =  ['4@hol', '2@NiPbrdg']
+split remarks =  ['4', 'hol']
+There are 4 no 				of H at the site  hol
+Vib ene to add = 0.6110414734351803
+Bef corr Eads = -804.42633443
+Aft corr Eads = -803.8152929565648
+Corrected Value = -803.8152929565648
+split remarks =  ['2', 'NiPbrdg']
+There are 2 no 				of H at the site  NiPbrdg
+Vib ene to add = 0.3413919720269707
+Bef corr Eads = -803.8152929565648
+Aft corr Eads = -803.4739009845379
+Corrected Value = -803.4739009845379
+--------------------------------------------------
+__________________________________________________
+		8 row Remarks =  #4@hol-3@NiPbrdg-20
+split remarks with H =  ['4@hol', '3@NiPbrdg']
+split remarks =  ['4', 'hol']
+There are 4 no 				of H at the site  hol
+Vib ene to add = 0.6110414734351803
+Bef corr Eads = -807.80777714
+Aft corr Eads = -807.1967356665648
+Corrected Value = -807.1967356665648
+split remarks =  ['3', 'NiPbrdg']
+There are 3 no 				of H at the site  NiPbrdg
+Vib ene to add = 0.512087958040456
+Bef corr Eads = -807.1967356665648
+Aft corr Eads = -806.6846477085244
+Corrected Value = -806.6846477085244
+--------------------------------------------------
+__________________________________________________
+		9 row Remarks =  #4@hol-4@NiPbrdg-20
+split remarks with H =  ['4@hol', '4@NiPbrdg']
+split remarks =  ['4', 'hol']
+There are 4 no 				of H at the site  hol
+Vib ene to add = 0.6110414734351803
+Bef corr Eads = -811.18884753
+Aft corr Eads = -810.5778060565648
+Corrected Value = -810.5778060565648
+split remarks =  ['4', 'NiPbrdg']
+There are 4 no 				of H at the site  NiPbrdg
+Vib ene to add = 0.6827839440539414
+Bef corr Eads = -810.5778060565648
+Aft corr Eads = -809.8950221125108
+Corrected Value = -809.8950221125108
+--------------------------------------------------
+__________________________________________________
+		10 row Remarks =  #4@hol-5@NiPbrdg-20
+split remarks with H =  ['4@hol', '5@NiPbrdg']
+split remarks =  ['4', 'hol']
+There are 4 no 				of H at the site  hol
+Vib ene to add = 0.6110414734351803
+Bef corr Eads = -814.5252335
+Aft corr Eads = -813.9141920265648
+Corrected Value = -813.9141920265648
+split remarks =  ['5', 'NiPbrdg']
+There are 5 no 				of H at the site  NiPbrdg
+Vib ene to add = 0.8534799300674267
+Bef corr Eads = -813.9141920265648
+Aft corr Eads = -813.0607120964974
+Corrected Value = -813.0607120964974
+--------------------------------------------------
+__________________________________________________
+		11 row Remarks =  #8@NiNibrdg-2@NiPbrdg-20
+split remarks with H =  ['8@NiNibrdg', '2@NiPbrdg']
+split remarks =  ['8', 'NiNibrdg']
+There are 8 no 				of H at the site  NiNibrdg
+Vib ene to add = 1.4485327100870227
+Bef corr Eads = -818.0321941
+Aft corr Eads = -816.5836613899129
+Corrected Value = -816.5836613899129
+split remarks =  ['2', 'NiPbrdg']
+There are 2 no 				of H at the site  NiPbrdg
+Vib ene to add = 0.3413919720269707
+Bef corr Eads = -816.5836613899129
+Aft corr Eads = -816.242269417886
+Corrected Value = -816.242269417886
+--------------------------------------------------
+__________________________________________________
+		12 row Remarks =  #8@NiNibrdg-3@NiPbrdg-20
+split remarks with H =  ['8@NiNibrdg', '3@NiPbrdg']
+split remarks =  ['8', 'NiNibrdg']
+There are 8 no 				of H at the site  NiNibrdg
+Vib ene to add = 1.4485327100870227
+Bef corr Eads = -821.39077957
+Aft corr Eads = -819.9422468599129
+Corrected Value = -819.9422468599129
+split remarks =  ['3', 'NiPbrdg']
+There are 3 no 				of H at the site  NiPbrdg
+Vib ene to add = 0.512087958040456
+Bef corr Eads = -819.9422468599129
+Aft corr Eads = -819.4301589018725
+Corrected Value = -819.4301589018725
+--------------------------------------------------
+__________________________________________________
+		13 row Remarks =  #8@NiNibrdg-4@NiPbrdg-20
+split remarks with H =  ['8@NiNibrdg', '4@NiPbrdg']
+split remarks =  ['8', 'NiNibrdg']
+There are 8 no 				of H at the site  NiNibrdg
+Vib ene to add = 1.4485327100870227
+Bef corr Eads = -824.68408372
+Aft corr Eads = -823.2355510099129
+Corrected Value = -823.2355510099129
+split remarks =  ['4', 'NiPbrdg']
+There are 4 no 				of H at the site  NiPbrdg
+Vib ene to add = 0.6827839440539414
+Bef corr Eads = -823.2355510099129
+Aft corr Eads = -822.5527670658589
+Corrected Value = -822.5527670658589
+--------------------------------------------------
+__________________________________________________
+		14 row Remarks =  #8@NiNibrdg-5@NiPbrdg-20
+split remarks with H =  ['8@NiNibrdg', '5@NiPbrdg']
+split remarks =  ['8', 'NiNibrdg']
+There are 8 no 				of H at the site  NiNibrdg
+Vib ene to add = 1.4485327100870227
+Bef corr Eads = -828.03244433
+Aft corr Eads = -826.5839116199129
+Corrected Value = -826.5839116199129
+split remarks =  ['5', 'NiPbrdg']
+There are 5 no 				of H at the site  NiPbrdg
+Vib ene to add = 0.8534799300674267
+Bef corr Eads = -826.5839116199129
+Aft corr Eads = -825.7304316898454
+Corrected Value = -825.7304316898454
+--------------------------------------------------
+__________________________________________________
+		15 row Remarks =  #8@NiNibrdg-6@NiPbrdg-20
+split remarks with H =  ['8@NiNibrdg', '6@NiPbrdg']
+split remarks =  ['8', 'NiNibrdg']
+There are 8 no 				of H at the site  NiNibrdg
+Vib ene to add = 1.4485327100870227
+Bef corr Eads = -831.19509702
+Aft corr Eads = -829.746564309913
+Corrected Value = -829.746564309913
+split remarks =  ['6', 'NiPbrdg']
+There are 6 no 				of H at the site  NiPbrdg
+Vib ene to add = 1.024175916080912
+Bef corr Eads = -829.746564309913
+Aft corr Eads = -828.722388393832
+Corrected Value = -828.722388393832
+--------------------------------------------------
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Input file AA7cvg.dat read.
+Average Adsorption Energy 	written to ---> AA7cvgAvgEads.dat
+Average Adsorption Energy 	written to ---> AA7cvgGibbsFene.dat
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+The vib ene data is taken fromAA7VibEneSite.dat
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Vibrational Energy Colleced from AA7VibEneSite.dat
+                  VibEne   Remarks
+0  [0.073, 0.041, 0.041]       hol
+1  [0.082, 0.066, 0.035]  NiNibrdg
+2  [0.093, 0.052, 0.029]   NiPbrdg
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+<class 'numpy.ndarray'>
+[0.073 0.041 0.041]
+<class 'numpy.ndarray'>
+<class 'numpy.ndarray'>
+[0.082 0.066 0.035]
+<class 'numpy.ndarray'>
+<class 'numpy.ndarray'>
+[0.093 0.052 0.029]
+<class 'numpy.ndarray'>
+__________________________________________________
+		0 row Remarks =  #1@hol-20
+split remarks with H =  ['1@hol']
+split remarks =  ['1', 'hol']
+There are 1 no 				of H at the site  hol
+Vib ene to add = 0.15276036835879508
+Bef corr Eads = -785.56045194
+Aft corr Eads = -785.4076915716412
+Corrected Value = -785.4076915716412
+--------------------------------------------------
+__________________________________________________
+		1 row Remarks =  #1@NiPbrdg-20
+split remarks with H =  ['1@NiPbrdg']
+split remarks =  ['1', 'NiPbrdg']
+There are 1 no 				of H at the site  NiPbrdg
+Vib ene to add = 0.17069598601348535
+Bef corr Eads = -784.99648215
+Aft corr Eads = -784.8257861639865
+Corrected Value = -784.8257861639865
+--------------------------------------------------
+__________________________________________________
+		2 row Remarks =  #2@hol-20
+split remarks with H =  ['2@hol']
+split remarks =  ['2', 'hol']
+There are 2 no 				of H at the site  hol
+Vib ene to add = 0.30552073671759017
+Bef corr Eads = -789.6039905
+Aft corr Eads = -789.2984697632825
+Corrected Value = -789.2984697632825
+--------------------------------------------------
+__________________________________________________
+		3 row Remarks =  #3@hol-20
+split remarks with H =  ['3@hol']
+split remarks =  ['3', 'hol']
+There are 3 no 				of H at the site  hol
+Vib ene to add = 0.45828110507638525
+Bef corr Eads = -793.61876012
+Aft corr Eads = -793.1604790149237
+Corrected Value = -793.1604790149237
+--------------------------------------------------
+__________________________________________________
+		4 row Remarks =  #4@hol-20
+split remarks with H =  ['4@hol']
+split remarks =  ['4', 'hol']
+There are 4 no 				of H at the site  hol
+Vib ene to add = 0.6110414734351803
+Bef corr Eads = -797.59894
+Aft corr Eads = -796.9878985265648
+Corrected Value = -796.9878985265648
+--------------------------------------------------
+__________________________________________________
+		5 row Remarks =  #4@hol-1@NiPbrdg-20
+split remarks with H =  ['4@hol', '1@NiPbrdg']
+split remarks =  ['4', 'hol']
+There are 4 no 				of H at the site  hol
+Vib ene to add = 0.6110414734351803
+Bef corr Eads = -801.01087513
+Aft corr Eads = -800.3998336565649
+Corrected Value = -800.3998336565649
+split remarks =  ['1', 'NiPbrdg']
+There are 1 no 				of H at the site  NiPbrdg
+Vib ene to add = 0.17069598601348535
+Bef corr Eads = -800.3998336565649
+Aft corr Eads = -800.2291376705514
+Corrected Value = -800.2291376705514
+--------------------------------------------------
+__________________________________________________
+		6 row Remarks =  #4@hol-1@NiPbrdg-5
+split remarks with H =  ['4@hol', '1@NiPbrdg']
+split remarks =  ['4', 'hol']
+There are 4 no 				of H at the site  hol
+Vib ene to add = 0.6110414734351803
+Bef corr Eads = -801.01091079
+Aft corr Eads = -800.3998693165648
+Corrected Value = -800.3998693165648
+split remarks =  ['1', 'NiPbrdg']
+There are 1 no 				of H at the site  NiPbrdg
+Vib ene to add = 0.17069598601348535
+Bef corr Eads = -800.3998693165648
+Aft corr Eads = -800.2291733305514
+Corrected Value = -800.2291733305514
+--------------------------------------------------
+__________________________________________________
+		7 row Remarks =  #4@hol-2@NiPbrdg-20
+split remarks with H =  ['4@hol', '2@NiPbrdg']
+split remarks =  ['4', 'hol']
+There are 4 no 				of H at the site  hol
+Vib ene to add = 0.6110414734351803
+Bef corr Eads = -804.42633443
+Aft corr Eads = -803.8152929565648
+Corrected Value = -803.8152929565648
+split remarks =  ['2', 'NiPbrdg']
+There are 2 no 				of H at the site  NiPbrdg
+Vib ene to add = 0.3413919720269707
+Bef corr Eads = -803.8152929565648
+Aft corr Eads = -803.4739009845379
+Corrected Value = -803.4739009845379
+--------------------------------------------------
+__________________________________________________
+		8 row Remarks =  #4@hol-3@NiPbrdg-20
+split remarks with H =  ['4@hol', '3@NiPbrdg']
+split remarks =  ['4', 'hol']
+There are 4 no 				of H at the site  hol
+Vib ene to add = 0.6110414734351803
+Bef corr Eads = -807.80777714
+Aft corr Eads = -807.1967356665648
+Corrected Value = -807.1967356665648
+split remarks =  ['3', 'NiPbrdg']
+There are 3 no 				of H at the site  NiPbrdg
+Vib ene to add = 0.512087958040456
+Bef corr Eads = -807.1967356665648
+Aft corr Eads = -806.6846477085244
+Corrected Value = -806.6846477085244
+--------------------------------------------------
+__________________________________________________
+		9 row Remarks =  #4@hol-4@NiPbrdg-20
+split remarks with H =  ['4@hol', '4@NiPbrdg']
+split remarks =  ['4', 'hol']
+There are 4 no 				of H at the site  hol
+Vib ene to add = 0.6110414734351803
+Bef corr Eads = -811.18884753
+Aft corr Eads = -810.5778060565648
+Corrected Value = -810.5778060565648
+split remarks =  ['4', 'NiPbrdg']
+There are 4 no 				of H at the site  NiPbrdg
+Vib ene to add = 0.6827839440539414
+Bef corr Eads = -810.5778060565648
+Aft corr Eads = -809.8950221125108
+Corrected Value = -809.8950221125108
+--------------------------------------------------
+__________________________________________________
+		10 row Remarks =  #4@hol-5@NiPbrdg-20
+split remarks with H =  ['4@hol', '5@NiPbrdg']
+split remarks =  ['4', 'hol']
+There are 4 no 				of H at the site  hol
+Vib ene to add = 0.6110414734351803
+Bef corr Eads = -814.5252335
+Aft corr Eads = -813.9141920265648
+Corrected Value = -813.9141920265648
+split remarks =  ['5', 'NiPbrdg']
+There are 5 no 				of H at the site  NiPbrdg
+Vib ene to add = 0.8534799300674267
+Bef corr Eads = -813.9141920265648
+Aft corr Eads = -813.0607120964974
+Corrected Value = -813.0607120964974
+--------------------------------------------------
+__________________________________________________
+		11 row Remarks =  #8@NiNibrdg-2@NiPbrdg-20
+split remarks with H =  ['8@NiNibrdg', '2@NiPbrdg']
+split remarks =  ['8', 'NiNibrdg']
+There are 8 no 				of H at the site  NiNibrdg
+Vib ene to add = 1.4485327100870227
+Bef corr Eads = -818.0321941
+Aft corr Eads = -816.5836613899129
+Corrected Value = -816.5836613899129
+split remarks =  ['2', 'NiPbrdg']
+There are 2 no 				of H at the site  NiPbrdg
+Vib ene to add = 0.3413919720269707
+Bef corr Eads = -816.5836613899129
+Aft corr Eads = -816.242269417886
+Corrected Value = -816.242269417886
+--------------------------------------------------
+__________________________________________________
+		12 row Remarks =  #8@NiNibrdg-3@NiPbrdg-20
+split remarks with H =  ['8@NiNibrdg', '3@NiPbrdg']
+split remarks =  ['8', 'NiNibrdg']
+There are 8 no 				of H at the site  NiNibrdg
+Vib ene to add = 1.4485327100870227
+Bef corr Eads = -821.39077957
+Aft corr Eads = -819.9422468599129
+Corrected Value = -819.9422468599129
+split remarks =  ['3', 'NiPbrdg']
+There are 3 no 				of H at the site  NiPbrdg
+Vib ene to add = 0.512087958040456
+Bef corr Eads = -819.9422468599129
+Aft corr Eads = -819.4301589018725
+Corrected Value = -819.4301589018725
+--------------------------------------------------
+__________________________________________________
+		13 row Remarks =  #8@NiNibrdg-4@NiPbrdg-20
+split remarks with H =  ['8@NiNibrdg', '4@NiPbrdg']
+split remarks =  ['8', 'NiNibrdg']
+There are 8 no 				of H at the site  NiNibrdg
+Vib ene to add = 1.4485327100870227
+Bef corr Eads = -824.68408372
+Aft corr Eads = -823.2355510099129
+Corrected Value = -823.2355510099129
+split remarks =  ['4', 'NiPbrdg']
+There are 4 no 				of H at the site  NiPbrdg
+Vib ene to add = 0.6827839440539414
+Bef corr Eads = -823.2355510099129
+Aft corr Eads = -822.5527670658589
+Corrected Value = -822.5527670658589
+--------------------------------------------------
+__________________________________________________
+		14 row Remarks =  #8@NiNibrdg-5@NiPbrdg-20
+split remarks with H =  ['8@NiNibrdg', '5@NiPbrdg']
+split remarks =  ['8', 'NiNibrdg']
+There are 8 no 				of H at the site  NiNibrdg
+Vib ene to add = 1.4485327100870227
+Bef corr Eads = -828.03244433
+Aft corr Eads = -826.5839116199129
+Corrected Value = -826.5839116199129
+split remarks =  ['5', 'NiPbrdg']
+There are 5 no 				of H at the site  NiPbrdg
+Vib ene to add = 0.8534799300674267
+Bef corr Eads = -826.5839116199129
+Aft corr Eads = -825.7304316898454
+Corrected Value = -825.7304316898454
+--------------------------------------------------
+__________________________________________________
+		15 row Remarks =  #8@NiNibrdg-6@NiPbrdg-20
+split remarks with H =  ['8@NiNibrdg', '6@NiPbrdg']
+split remarks =  ['8', 'NiNibrdg']
+There are 8 no 				of H at the site  NiNibrdg
+Vib ene to add = 1.4485327100870227
+Bef corr Eads = -831.19509702
+Aft corr Eads = -829.746564309913
+Corrected Value = -829.746564309913
+split remarks =  ['6', 'NiPbrdg']
+There are 6 no 				of H at the site  NiPbrdg
+Vib ene to add = 1.024175916080912
+Bef corr Eads = -829.746564309913
+Aft corr Eads = -828.722388393832
+Corrected Value = -828.722388393832
+--------------------------------------------------
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    nH        Eads                   Remarks
+0    0 -781.494779                   #Refene
+1    1 -785.407692                 #1@hol-20
+2    2 -789.298470                 #2@hol-20
+3    3 -793.160479                 #3@hol-20
+4    4 -796.987899                 #4@hol-20
+5    5 -800.229173        #4@hol-1@NiPbrdg-5
+6    6 -803.473901       #4@hol-2@NiPbrdg-20
+7    7 -806.684648       #4@hol-3@NiPbrdg-20
+8    8 -809.895022       #4@hol-4@NiPbrdg-20
+9    9 -813.060712       #4@hol-5@NiPbrdg-20
+10  10 -816.242269  #8@NiNibrdg-2@NiPbrdg-20
+11  11 -819.430159  #8@NiNibrdg-3@NiPbrdg-20
+12  12 -822.552767  #8@NiNibrdg-4@NiPbrdg-20
+13  13 -825.730432  #8@NiNibrdg-5@NiPbrdg-20
+14  14 -828.722388  #8@NiNibrdg-6@NiPbrdg-20
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+The vib ene data is taken fromAA7VibEneSite.dat
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Vibrational Energy Colleced from AA7VibEneSite.dat
+                  VibEne   Remarks
+0  [0.073, 0.041, 0.041]       hol
+1  [0.082, 0.066, 0.035]  NiNibrdg
+2  [0.093, 0.052, 0.029]   NiPbrdg
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+<class 'numpy.ndarray'>
+[0.073 0.041 0.041]
+<class 'numpy.ndarray'>
+<class 'numpy.ndarray'>
+[0.082 0.066 0.035]
+<class 'numpy.ndarray'>
+<class 'numpy.ndarray'>
+[0.093 0.052 0.029]
+<class 'numpy.ndarray'>
+__________________________________________________
+		0 row Remarks =  #1@hol-20
+split remarks with H =  ['1@hol']
+split remarks =  ['1', 'hol']
+There are 1 no 				of H at the site  hol
+Vib ene to add = 0.15276036835879508
+Bef corr Eads = -785.56045194
+Aft corr Eads = -785.4076915716412
+Corrected Value = -785.4076915716412
+--------------------------------------------------
+__________________________________________________
+		1 row Remarks =  #1@NiPbrdg-20
+split remarks with H =  ['1@NiPbrdg']
+split remarks =  ['1', 'NiPbrdg']
+There are 1 no 				of H at the site  NiPbrdg
+Vib ene to add = 0.17069598601348535
+Bef corr Eads = -784.99648215
+Aft corr Eads = -784.8257861639865
+Corrected Value = -784.8257861639865
+--------------------------------------------------
+__________________________________________________
+		2 row Remarks =  #2@hol-20
+split remarks with H =  ['2@hol']
+split remarks =  ['2', 'hol']
+There are 2 no 				of H at the site  hol
+Vib ene to add = 0.30552073671759017
+Bef corr Eads = -789.6039905
+Aft corr Eads = -789.2984697632825
+Corrected Value = -789.2984697632825
+--------------------------------------------------
+__________________________________________________
+		3 row Remarks =  #3@hol-20
+split remarks with H =  ['3@hol']
+split remarks =  ['3', 'hol']
+There are 3 no 				of H at the site  hol
+Vib ene to add = 0.45828110507638525
+Bef corr Eads = -793.61876012
+Aft corr Eads = -793.1604790149237
+Corrected Value = -793.1604790149237
+--------------------------------------------------
+__________________________________________________
+		4 row Remarks =  #4@hol-20
+split remarks with H =  ['4@hol']
+split remarks =  ['4', 'hol']
+There are 4 no 				of H at the site  hol
+Vib ene to add = 0.6110414734351803
+Bef corr Eads = -797.59894
+Aft corr Eads = -796.9878985265648
+Corrected Value = -796.9878985265648
+--------------------------------------------------
+__________________________________________________
+		5 row Remarks =  #4@hol-1@NiPbrdg-20
+split remarks with H =  ['4@hol', '1@NiPbrdg']
+split remarks =  ['4', 'hol']
+There are 4 no 				of H at the site  hol
+Vib ene to add = 0.6110414734351803
+Bef corr Eads = -801.01087513
+Aft corr Eads = -800.3998336565649
+Corrected Value = -800.3998336565649
+split remarks =  ['1', 'NiPbrdg']
+There are 1 no 				of H at the site  NiPbrdg
+Vib ene to add = 0.17069598601348535
+Bef corr Eads = -800.3998336565649
+Aft corr Eads = -800.2291376705514
+Corrected Value = -800.2291376705514
+--------------------------------------------------
+__________________________________________________
+		6 row Remarks =  #4@hol-1@NiPbrdg-5
+split remarks with H =  ['4@hol', '1@NiPbrdg']
+split remarks =  ['4', 'hol']
+There are 4 no 				of H at the site  hol
+Vib ene to add = 0.6110414734351803
+Bef corr Eads = -801.01091079
+Aft corr Eads = -800.3998693165648
+Corrected Value = -800.3998693165648
+split remarks =  ['1', 'NiPbrdg']
+There are 1 no 				of H at the site  NiPbrdg
+Vib ene to add = 0.17069598601348535
+Bef corr Eads = -800.3998693165648
+Aft corr Eads = -800.2291733305514
+Corrected Value = -800.2291733305514
+--------------------------------------------------
+__________________________________________________
+		7 row Remarks =  #4@hol-2@NiPbrdg-20
+split remarks with H =  ['4@hol', '2@NiPbrdg']
+split remarks =  ['4', 'hol']
+There are 4 no 				of H at the site  hol
+Vib ene to add = 0.6110414734351803
+Bef corr Eads = -804.42633443
+Aft corr Eads = -803.8152929565648
+Corrected Value = -803.8152929565648
+split remarks =  ['2', 'NiPbrdg']
+There are 2 no 				of H at the site  NiPbrdg
+Vib ene to add = 0.3413919720269707
+Bef corr Eads = -803.8152929565648
+Aft corr Eads = -803.4739009845379
+Corrected Value = -803.4739009845379
+--------------------------------------------------
+__________________________________________________
+		8 row Remarks =  #4@hol-3@NiPbrdg-20
+split remarks with H =  ['4@hol', '3@NiPbrdg']
+split remarks =  ['4', 'hol']
+There are 4 no 				of H at the site  hol
+Vib ene to add = 0.6110414734351803
+Bef corr Eads = -807.80777714
+Aft corr Eads = -807.1967356665648
+Corrected Value = -807.1967356665648
+split remarks =  ['3', 'NiPbrdg']
+There are 3 no 				of H at the site  NiPbrdg
+Vib ene to add = 0.512087958040456
+Bef corr Eads = -807.1967356665648
+Aft corr Eads = -806.6846477085244
+Corrected Value = -806.6846477085244
+--------------------------------------------------
+__________________________________________________
+		9 row Remarks =  #4@hol-4@NiPbrdg-20
+split remarks with H =  ['4@hol', '4@NiPbrdg']
+split remarks =  ['4', 'hol']
+There are 4 no 				of H at the site  hol
+Vib ene to add = 0.6110414734351803
+Bef corr Eads = -811.18884753
+Aft corr Eads = -810.5778060565648
+Corrected Value = -810.5778060565648
+split remarks =  ['4', 'NiPbrdg']
+There are 4 no 				of H at the site  NiPbrdg
+Vib ene to add = 0.6827839440539414
+Bef corr Eads = -810.5778060565648
+Aft corr Eads = -809.8950221125108
+Corrected Value = -809.8950221125108
+--------------------------------------------------
+__________________________________________________
+		10 row Remarks =  #4@hol-5@NiPbrdg-20
+split remarks with H =  ['4@hol', '5@NiPbrdg']
+split remarks =  ['4', 'hol']
+There are 4 no 				of H at the site  hol
+Vib ene to add = 0.6110414734351803
+Bef corr Eads = -814.5252335
+Aft corr Eads = -813.9141920265648
+Corrected Value = -813.9141920265648
+split remarks =  ['5', 'NiPbrdg']
+There are 5 no 				of H at the site  NiPbrdg
+Vib ene to add = 0.8534799300674267
+Bef corr Eads = -813.9141920265648
+Aft corr Eads = -813.0607120964974
+Corrected Value = -813.0607120964974
+--------------------------------------------------
+__________________________________________________
+		11 row Remarks =  #8@NiNibrdg-2@NiPbrdg-20
+split remarks with H =  ['8@NiNibrdg', '2@NiPbrdg']
+split remarks =  ['8', 'NiNibrdg']
+There are 8 no 				of H at the site  NiNibrdg
+Vib ene to add = 1.4485327100870227
+Bef corr Eads = -818.0321941
+Aft corr Eads = -816.5836613899129
+Corrected Value = -816.5836613899129
+split remarks =  ['2', 'NiPbrdg']
+There are 2 no 				of H at the site  NiPbrdg
+Vib ene to add = 0.3413919720269707
+Bef corr Eads = -816.5836613899129
+Aft corr Eads = -816.242269417886
+Corrected Value = -816.242269417886
+--------------------------------------------------
+__________________________________________________
+		12 row Remarks =  #8@NiNibrdg-3@NiPbrdg-20
+split remarks with H =  ['8@NiNibrdg', '3@NiPbrdg']
+split remarks =  ['8', 'NiNibrdg']
+There are 8 no 				of H at the site  NiNibrdg
+Vib ene to add = 1.4485327100870227
+Bef corr Eads = -821.39077957
+Aft corr Eads = -819.9422468599129
+Corrected Value = -819.9422468599129
+split remarks =  ['3', 'NiPbrdg']
+There are 3 no 				of H at the site  NiPbrdg
+Vib ene to add = 0.512087958040456
+Bef corr Eads = -819.9422468599129
+Aft corr Eads = -819.4301589018725
+Corrected Value = -819.4301589018725
+--------------------------------------------------
+__________________________________________________
+		13 row Remarks =  #8@NiNibrdg-4@NiPbrdg-20
+split remarks with H =  ['8@NiNibrdg', '4@NiPbrdg']
+split remarks =  ['8', 'NiNibrdg']
+There are 8 no 				of H at the site  NiNibrdg
+Vib ene to add = 1.4485327100870227
+Bef corr Eads = -824.68408372
+Aft corr Eads = -823.2355510099129
+Corrected Value = -823.2355510099129
+split remarks =  ['4', 'NiPbrdg']
+There are 4 no 				of H at the site  NiPbrdg
+Vib ene to add = 0.6827839440539414
+Bef corr Eads = -823.2355510099129
+Aft corr Eads = -822.5527670658589
+Corrected Value = -822.5527670658589
+--------------------------------------------------
+__________________________________________________
+		14 row Remarks =  #8@NiNibrdg-5@NiPbrdg-20
+split remarks with H =  ['8@NiNibrdg', '5@NiPbrdg']
+split remarks =  ['8', 'NiNibrdg']
+There are 8 no 				of H at the site  NiNibrdg
+Vib ene to add = 1.4485327100870227
+Bef corr Eads = -828.03244433
+Aft corr Eads = -826.5839116199129
+Corrected Value = -826.5839116199129
+split remarks =  ['5', 'NiPbrdg']
+There are 5 no 				of H at the site  NiPbrdg
+Vib ene to add = 0.8534799300674267
+Bef corr Eads = -826.5839116199129
+Aft corr Eads = -825.7304316898454
+Corrected Value = -825.7304316898454
+--------------------------------------------------
+__________________________________________________
+		15 row Remarks =  #8@NiNibrdg-6@NiPbrdg-20
+split remarks with H =  ['8@NiNibrdg', '6@NiPbrdg']
+split remarks =  ['8', 'NiNibrdg']
+There are 8 no 				of H at the site  NiNibrdg
+Vib ene to add = 1.4485327100870227
+Bef corr Eads = -831.19509702
+Aft corr Eads = -829.746564309913
+Corrected Value = -829.746564309913
+split remarks =  ['6', 'NiPbrdg']
+There are 6 no 				of H at the site  NiPbrdg
+Vib ene to add = 1.024175916080912
+Bef corr Eads = -829.746564309913
+Aft corr Eads = -828.722388393832
+Corrected Value = -828.722388393832
+--------------------------------------------------
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    nH        Eads                   Remarks
+0    0 -781.494779                   #Refene
+1    1 -785.407692                 #1@hol-20
+2    1 -784.825786             #1@NiPbrdg-20
+3    2 -789.298470                 #2@hol-20
+4    3 -793.160479                 #3@hol-20
+5    4 -796.987899                 #4@hol-20
+6    5 -800.229173        #4@hol-1@NiPbrdg-5
+7    5 -800.229138       #4@hol-1@NiPbrdg-20
+8    6 -803.473901       #4@hol-2@NiPbrdg-20
+9    7 -806.684648       #4@hol-3@NiPbrdg-20
+10   8 -809.895022       #4@hol-4@NiPbrdg-20
+11   9 -813.060712       #4@hol-5@NiPbrdg-20
+12  10 -816.242269  #8@NiNibrdg-2@NiPbrdg-20
+13  11 -819.430159  #8@NiNibrdg-3@NiPbrdg-20
+14  12 -822.552767  #8@NiNibrdg-4@NiPbrdg-20
+15  13 -825.730432  #8@NiNibrdg-5@NiPbrdg-20
+16  14 -828.722388  #8@NiNibrdg-6@NiPbrdg-20
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Input file AA7cvg.dat read.
+Differential Gibbs Adsorption Energy 	written to ---> AA7cvgdiffGibbs.dat
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+The vib ene data is taken fromAA7+PVibEneSite.dat
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Vibrational Energy Colleced from AA7+PVibEneSite.dat
+                                              VibEne   Remarks
+0  [0.144, 0.03, 0.029, 0.024, 0.021, 0.021, 0.02...        0P
+1  [0.022, 0.021, 0.021, 0.02, 0.012, 0.012, 0.01...  Ni3P2+4P
+2  [0.147, 0.145, 0.066, 0.032, 0.029, 0.028, 0.0...       PH2
+3  [0.145, 0.143, 0.143, 0.065, 0.065, 0.06, 0.02...       PH3
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+<class 'numpy.ndarray'>
+[0.144 0.03  0.029 0.024 0.021 0.021 0.021 0.017 0.017 0.014 0.014 0.013
+ 0.013 0.013 0.013]
+<class 'numpy.ndarray'>
+<class 'numpy.ndarray'>
+[0.022 0.021 0.021 0.02  0.012 0.012 0.012 0.012 0.012 0.012 0.012 0.012]
+<class 'numpy.ndarray'>
+<class 'numpy.ndarray'>
+[0.147 0.145 0.066 0.032 0.029 0.028 0.022 0.022 0.021 0.02  0.015 0.015
+ 0.014 0.014 0.014 0.013 0.011 0.005]
+<class 'numpy.ndarray'>
+<class 'numpy.ndarray'>
+[0.145 0.143 0.143 0.065 0.065 0.06  0.029 0.029 0.022 0.021 0.021 0.016
+ 0.015 0.014 0.014 0.014 0.013 0.013 0.013 0.007]
+<class 'numpy.ndarray'>
+__________________________________________________
+		0 row Remarks =  #1@0P
+split remarks with H =  ['1@0P']
+split remarks =  ['1', '0P']
+There are 1 no 				of H at the site  0P
+Vib ene to add = 0.29425523422550204
+Bef corr Eads = -811.99724109
+Aft corr Eads = -811.7029858557745
+Corrected Value = -811.7029858557745
+--------------------------------------------------
+__________________________________________________
+		1 row Remarks =  #2@PH2
+split remarks with H =  ['2@PH2']
+split remarks =  ['2', 'PH2']
+There are 1.0 no 				of H at the site  PH2
+Vib ene to add = 0.49734789616912023
+Bef corr Eads = -815.57687808
+Aft corr Eads = -815.0795301838309
+Corrected Value = -815.0795301838309
+--------------------------------------------------
+__________________________________________________
+		2 row Remarks =  #2@PH2-1@0P
+split remarks with H =  ['2@PH2', '1@0P']
+split remarks =  ['2', 'PH2']
+There are 1.0 no 				of H at the site  PH2
+Vib ene to add = 0.49734789616912023
+Bef corr Eads = -819.21945975
+Aft corr Eads = -818.7221118538309
+Corrected Value = -818.7221118538309
+split remarks =  ['1', '0P']
+There are 1 no 				of H at the site  0P
+Vib ene to add = 0.29425523422550204
+Bef corr Eads = -818.7221118538309
+Aft corr Eads = -818.4278566196054
+Corrected Value = -818.4278566196054
+--------------------------------------------------
+__________________________________________________
+		3 row Remarks =  #4@PH2
+split remarks with H =  ['4@PH2']
+split remarks =  ['4', 'PH2']
+There are 2.0 no 				of H at the site  PH2
+Vib ene to add = 0.9946957923382405
+Bef corr Eads = -822.75665801
+Aft corr Eads = -821.7619622176618
+Corrected Value = -821.7619622176618
+--------------------------------------------------
+__________________________________________________
+		4 row Remarks =  #3@PH3-2@PH2
+split remarks with H =  ['3@PH3', '2@PH2']
+split remarks =  ['3', 'PH3']
+There are 1.0 no 				of H at the site  PH3
+Vib ene to add = 0.7326569106711469
+Bef corr Eads = -826.1667454
+Aft corr Eads = -825.4340884893288
+Corrected Value = -825.4340884893288
+split remarks =  ['2', 'PH2']
+There are 1.0 no 				of H at the site  PH2
+Vib ene to add = 0.49734789616912023
+Bef corr Eads = -825.4340884893288
+Aft corr Eads = -824.9367405931597
+Corrected Value = -824.9367405931597
+--------------------------------------------------
+__________________________________________________
+		5 row Remarks =  #6@PH2
+split remarks with H =  ['6@PH2']
+split remarks =  ['6', 'PH2']
+There are 3.0 no 				of H at the site  PH2
+Vib ene to add = 1.4920436885073607
+Bef corr Eads = -829.99109879
+Aft corr Eads = -828.4990551014927
+Corrected Value = -828.4990551014927
+--------------------------------------------------
+__________________________________________________
+		6 row Remarks =  #6@PH2-1@0P
+split remarks with H =  ['6@PH2', '1@0P']
+split remarks =  ['6', 'PH2']
+There are 3.0 no 				of H at the site  PH2
+Vib ene to add = 1.4920436885073607
+Bef corr Eads = -833.62981165
+Aft corr Eads = -832.1377679614926
+Corrected Value = -832.1377679614926
+split remarks =  ['1', '0P']
+There are 1 no 				of H at the site  0P
+Vib ene to add = 0.29425523422550204
+Bef corr Eads = -832.1377679614926
+Aft corr Eads = -831.8435127272671
+Corrected Value = -831.8435127272671
+--------------------------------------------------
+__________________________________________________
+		7 row Remarks =  #8@PH2
+split remarks with H =  ['8@PH2']
+split remarks =  ['8', 'PH2']
+There are 4.0 no 				of H at the site  PH2
+Vib ene to add = 1.989391584676481
+Bef corr Eads = -837.14120198
+Aft corr Eads = -835.1518103953235
+Corrected Value = -835.1518103953235
+--------------------------------------------------
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Input file AA7+Pcvg.dat read.
+Average Adsorption Energy 	written to ---> AA7+PcvgAvgEads.dat
+Average Adsorption Energy 	written to ---> AA7+PcvgGibbsFene.dat
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+The vib ene data is taken fromAA7+PVibEneSite.dat
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Vibrational Energy Colleced from AA7+PVibEneSite.dat
+                                              VibEne   Remarks
+0  [0.144, 0.03, 0.029, 0.024, 0.021, 0.021, 0.02...        0P
+1  [0.022, 0.021, 0.021, 0.02, 0.012, 0.012, 0.01...  Ni3P2+4P
+2  [0.147, 0.145, 0.066, 0.032, 0.029, 0.028, 0.0...       PH2
+3  [0.145, 0.143, 0.143, 0.065, 0.065, 0.06, 0.02...       PH3
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+<class 'numpy.ndarray'>
+[0.144 0.03  0.029 0.024 0.021 0.021 0.021 0.017 0.017 0.014 0.014 0.013
+ 0.013 0.013 0.013]
+<class 'numpy.ndarray'>
+<class 'numpy.ndarray'>
+[0.022 0.021 0.021 0.02  0.012 0.012 0.012 0.012 0.012 0.012 0.012 0.012]
+<class 'numpy.ndarray'>
+<class 'numpy.ndarray'>
+[0.147 0.145 0.066 0.032 0.029 0.028 0.022 0.022 0.021 0.02  0.015 0.015
+ 0.014 0.014 0.014 0.013 0.011 0.005]
+<class 'numpy.ndarray'>
+<class 'numpy.ndarray'>
+[0.145 0.143 0.143 0.065 0.065 0.06  0.029 0.029 0.022 0.021 0.021 0.016
+ 0.015 0.014 0.014 0.014 0.013 0.013 0.013 0.007]
+<class 'numpy.ndarray'>
+__________________________________________________
+		0 row Remarks =  #1@0P
+split remarks with H =  ['1@0P']
+split remarks =  ['1', '0P']
+There are 1 no 				of H at the site  0P
+Vib ene to add = 0.29425523422550204
+Bef corr Eads = -811.99724109
+Aft corr Eads = -811.7029858557745
+Corrected Value = -811.7029858557745
+--------------------------------------------------
+__________________________________________________
+		1 row Remarks =  #2@PH2
+split remarks with H =  ['2@PH2']
+split remarks =  ['2', 'PH2']
+There are 1.0 no 				of H at the site  PH2
+Vib ene to add = 0.49734789616912023
+Bef corr Eads = -815.57687808
+Aft corr Eads = -815.0795301838309
+Corrected Value = -815.0795301838309
+--------------------------------------------------
+__________________________________________________
+		2 row Remarks =  #2@PH2-1@0P
+split remarks with H =  ['2@PH2', '1@0P']
+split remarks =  ['2', 'PH2']
+There are 1.0 no 				of H at the site  PH2
+Vib ene to add = 0.49734789616912023
+Bef corr Eads = -819.21945975
+Aft corr Eads = -818.7221118538309
+Corrected Value = -818.7221118538309
+split remarks =  ['1', '0P']
+There are 1 no 				of H at the site  0P
+Vib ene to add = 0.29425523422550204
+Bef corr Eads = -818.7221118538309
+Aft corr Eads = -818.4278566196054
+Corrected Value = -818.4278566196054
+--------------------------------------------------
+__________________________________________________
+		3 row Remarks =  #4@PH2
+split remarks with H =  ['4@PH2']
+split remarks =  ['4', 'PH2']
+There are 2.0 no 				of H at the site  PH2
+Vib ene to add = 0.9946957923382405
+Bef corr Eads = -822.75665801
+Aft corr Eads = -821.7619622176618
+Corrected Value = -821.7619622176618
+--------------------------------------------------
+__________________________________________________
+		4 row Remarks =  #3@PH3-2@PH2
+split remarks with H =  ['3@PH3', '2@PH2']
+split remarks =  ['3', 'PH3']
+There are 1.0 no 				of H at the site  PH3
+Vib ene to add = 0.7326569106711469
+Bef corr Eads = -826.1667454
+Aft corr Eads = -825.4340884893288
+Corrected Value = -825.4340884893288
+split remarks =  ['2', 'PH2']
+There are 1.0 no 				of H at the site  PH2
+Vib ene to add = 0.49734789616912023
+Bef corr Eads = -825.4340884893288
+Aft corr Eads = -824.9367405931597
+Corrected Value = -824.9367405931597
+--------------------------------------------------
+__________________________________________________
+		5 row Remarks =  #6@PH2
+split remarks with H =  ['6@PH2']
+split remarks =  ['6', 'PH2']
+There are 3.0 no 				of H at the site  PH2
+Vib ene to add = 1.4920436885073607
+Bef corr Eads = -829.99109879
+Aft corr Eads = -828.4990551014927
+Corrected Value = -828.4990551014927
+--------------------------------------------------
+__________________________________________________
+		6 row Remarks =  #6@PH2-1@0P
+split remarks with H =  ['6@PH2', '1@0P']
+split remarks =  ['6', 'PH2']
+There are 3.0 no 				of H at the site  PH2
+Vib ene to add = 1.4920436885073607
+Bef corr Eads = -833.62981165
+Aft corr Eads = -832.1377679614926
+Corrected Value = -832.1377679614926
+split remarks =  ['1', '0P']
+There are 1 no 				of H at the site  0P
+Vib ene to add = 0.29425523422550204
+Bef corr Eads = -832.1377679614926
+Aft corr Eads = -831.8435127272671
+Corrected Value = -831.8435127272671
+--------------------------------------------------
+__________________________________________________
+		7 row Remarks =  #8@PH2
+split remarks with H =  ['8@PH2']
+split remarks =  ['8', 'PH2']
+There are 4.0 no 				of H at the site  PH2
+Vib ene to add = 1.989391584676481
+Bef corr Eads = -837.14120198
+Aft corr Eads = -835.1518103953235
+Corrected Value = -835.1518103953235
+--------------------------------------------------
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+   nH        Eads       Remarks
+0   0 -808.303763       #Refene
+1   1 -811.702986         #1@0P
+2   2 -815.079530        #2@PH2
+3   3 -818.427857   #2@PH2-1@0P
+4   4 -821.761962        #4@PH2
+5   5 -824.936741  #3@PH3-2@PH2
+6   6 -828.499055        #6@PH2
+7   7 -831.843513   #6@PH2-1@0P
+8   8 -835.151810        #8@PH2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+The vib ene data is taken fromAA7+PVibEneSite.dat
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Vibrational Energy Colleced from AA7+PVibEneSite.dat
+                                              VibEne   Remarks
+0  [0.144, 0.03, 0.029, 0.024, 0.021, 0.021, 0.02...        0P
+1  [0.022, 0.021, 0.021, 0.02, 0.012, 0.012, 0.01...  Ni3P2+4P
+2  [0.147, 0.145, 0.066, 0.032, 0.029, 0.028, 0.0...       PH2
+3  [0.145, 0.143, 0.143, 0.065, 0.065, 0.06, 0.02...       PH3
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+<class 'numpy.ndarray'>
+[0.144 0.03  0.029 0.024 0.021 0.021 0.021 0.017 0.017 0.014 0.014 0.013
+ 0.013 0.013 0.013]
+<class 'numpy.ndarray'>
+<class 'numpy.ndarray'>
+[0.022 0.021 0.021 0.02  0.012 0.012 0.012 0.012 0.012 0.012 0.012 0.012]
+<class 'numpy.ndarray'>
+<class 'numpy.ndarray'>
+[0.147 0.145 0.066 0.032 0.029 0.028 0.022 0.022 0.021 0.02  0.015 0.015
+ 0.014 0.014 0.014 0.013 0.011 0.005]
+<class 'numpy.ndarray'>
+<class 'numpy.ndarray'>
+[0.145 0.143 0.143 0.065 0.065 0.06  0.029 0.029 0.022 0.021 0.021 0.016
+ 0.015 0.014 0.014 0.014 0.013 0.013 0.013 0.007]
+<class 'numpy.ndarray'>
+__________________________________________________
+		0 row Remarks =  #1@0P
+split remarks with H =  ['1@0P']
+split remarks =  ['1', '0P']
+There are 1 no 				of H at the site  0P
+Vib ene to add = 0.29425523422550204
+Bef corr Eads = -811.99724109
+Aft corr Eads = -811.7029858557745
+Corrected Value = -811.7029858557745
+--------------------------------------------------
+__________________________________________________
+		1 row Remarks =  #2@PH2
+split remarks with H =  ['2@PH2']
+split remarks =  ['2', 'PH2']
+There are 1.0 no 				of H at the site  PH2
+Vib ene to add = 0.49734789616912023
+Bef corr Eads = -815.57687808
+Aft corr Eads = -815.0795301838309
+Corrected Value = -815.0795301838309
+--------------------------------------------------
+__________________________________________________
+		2 row Remarks =  #2@PH2-1@0P
+split remarks with H =  ['2@PH2', '1@0P']
+split remarks =  ['2', 'PH2']
+There are 1.0 no 				of H at the site  PH2
+Vib ene to add = 0.49734789616912023
+Bef corr Eads = -819.21945975
+Aft corr Eads = -818.7221118538309
+Corrected Value = -818.7221118538309
+split remarks =  ['1', '0P']
+There are 1 no 				of H at the site  0P
+Vib ene to add = 0.29425523422550204
+Bef corr Eads = -818.7221118538309
+Aft corr Eads = -818.4278566196054
+Corrected Value = -818.4278566196054
+--------------------------------------------------
+__________________________________________________
+		3 row Remarks =  #4@PH2
+split remarks with H =  ['4@PH2']
+split remarks =  ['4', 'PH2']
+There are 2.0 no 				of H at the site  PH2
+Vib ene to add = 0.9946957923382405
+Bef corr Eads = -822.75665801
+Aft corr Eads = -821.7619622176618
+Corrected Value = -821.7619622176618
+--------------------------------------------------
+__________________________________________________
+		4 row Remarks =  #3@PH3-2@PH2
+split remarks with H =  ['3@PH3', '2@PH2']
+split remarks =  ['3', 'PH3']
+There are 1.0 no 				of H at the site  PH3
+Vib ene to add = 0.7326569106711469
+Bef corr Eads = -826.1667454
+Aft corr Eads = -825.4340884893288
+Corrected Value = -825.4340884893288
+split remarks =  ['2', 'PH2']
+There are 1.0 no 				of H at the site  PH2
+Vib ene to add = 0.49734789616912023
+Bef corr Eads = -825.4340884893288
+Aft corr Eads = -824.9367405931597
+Corrected Value = -824.9367405931597
+--------------------------------------------------
+__________________________________________________
+		5 row Remarks =  #6@PH2
+split remarks with H =  ['6@PH2']
+split remarks =  ['6', 'PH2']
+There are 3.0 no 				of H at the site  PH2
+Vib ene to add = 1.4920436885073607
+Bef corr Eads = -829.99109879
+Aft corr Eads = -828.4990551014927
+Corrected Value = -828.4990551014927
+--------------------------------------------------
+__________________________________________________
+		6 row Remarks =  #6@PH2-1@0P
+split remarks with H =  ['6@PH2', '1@0P']
+split remarks =  ['6', 'PH2']
+There are 3.0 no 				of H at the site  PH2
+Vib ene to add = 1.4920436885073607
+Bef corr Eads = -833.62981165
+Aft corr Eads = -832.1377679614926
+Corrected Value = -832.1377679614926
+split remarks =  ['1', '0P']
+There are 1 no 				of H at the site  0P
+Vib ene to add = 0.29425523422550204
+Bef corr Eads = -832.1377679614926
+Aft corr Eads = -831.8435127272671
+Corrected Value = -831.8435127272671
+--------------------------------------------------
+__________________________________________________
+		7 row Remarks =  #8@PH2
+split remarks with H =  ['8@PH2']
+split remarks =  ['8', 'PH2']
+There are 4.0 no 				of H at the site  PH2
+Vib ene to add = 1.989391584676481
+Bef corr Eads = -837.14120198
+Aft corr Eads = -835.1518103953235
+Corrected Value = -835.1518103953235
+--------------------------------------------------
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+   nH        Eads       Remarks
+0   0 -808.303763       #Refene
+1   1 -811.702986         #1@0P
+2   2 -815.079530        #2@PH2
+3   3 -818.427857   #2@PH2-1@0P
+4   4 -821.761962        #4@PH2
+5   5 -824.936741  #3@PH3-2@PH2
+6   6 -828.499055        #6@PH2
+7   7 -831.843513   #6@PH2-1@0P
+8   8 -835.151810        #8@PH2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Input file AA7+Pcvg.dat read.
+Differential Gibbs Adsorption Energy 	written to ---> AA7+PcvgdiffGibbs.dat
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Vibrational Energy Colleced from AA7VibEneSite.dat
+                  VibEne   Remarks
+0  [0.073, 0.041, 0.041]       hol
+1  [0.082, 0.066, 0.035]  NiNibrdg
+2  [0.093, 0.052, 0.029]   NiPbrdg
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+hol
+[0.073 0.041 0.041]
+[0.073 0.041 0.041]
+<class 'numpy.ndarray'>
+NiNibrdg
+[0.082 0.066 0.035]
+[0.082 0.066 0.035]
+<class 'numpy.ndarray'>
+NiPbrdg
+[0.093 0.052 0.029]
+[0.093 0.052 0.029]
+<class 'numpy.ndarray'>
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Vibrational Energy Colleced from AA7+PVibEneSite.dat
+                                              VibEne   Remarks
+0  [0.144, 0.03, 0.029, 0.024, 0.021, 0.021, 0.02...        0P
+1  [0.022, 0.021, 0.021, 0.02, 0.012, 0.012, 0.01...  Ni3P2+4P
+2  [0.147, 0.145, 0.066, 0.032, 0.029, 0.028, 0.0...       PH2
+3  [0.145, 0.143, 0.143, 0.065, 0.065, 0.06, 0.02...       PH3
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+0P
+[0.144 0.03  0.029 0.024 0.021 0.021 0.021 0.017 0.017 0.014 0.014 0.013
+ 0.013 0.013 0.013]
+[0.144 0.03  0.029 0.024 0.021 0.021 0.021 0.017 0.017 0.014 0.014 0.013
+ 0.013 0.013 0.013]
+<class 'numpy.ndarray'>
+Ni3P2+4P
+[0.022 0.021 0.021 0.02  0.012 0.012 0.012 0.012 0.012 0.012 0.012 0.012]
+[0.022 0.021 0.021 0.02  0.012 0.012 0.012 0.012 0.012 0.012 0.012 0.012]
+<class 'numpy.ndarray'>
+PH2
+[0.147 0.145 0.066 0.032 0.029 0.028 0.022 0.022 0.021 0.02  0.015 0.015
+ 0.014 0.014 0.014 0.013 0.011 0.005]
+[0.147 0.145 0.066 0.032 0.029 0.028 0.022 0.022 0.021 0.02  0.015 0.015
+ 0.014 0.014 0.014 0.013 0.011 0.005]
+<class 'numpy.ndarray'>
+PH3
+[0.145 0.143 0.143 0.065 0.065 0.06  0.029 0.029 0.022 0.021 0.021 0.016
+ 0.015 0.014 0.014 0.014 0.013 0.013 0.013 0.007]
+[0.145 0.143 0.143 0.065 0.065 0.06  0.029 0.029 0.022 0.021 0.021 0.016
+ 0.015 0.014 0.014 0.014 0.013 0.013 0.013 0.007]
+<class 'numpy.ndarray'>

@@ -1,0 +1,5 @@
+#Pathway Ereaction(eV) Eactivation(eV) Remarks
+R6vvt 0.03 1.14 6to7to8to6
+R7vh -0.02 0.60 6to7Ito6
+R8vh 0.06 0.93 6to7to6
+

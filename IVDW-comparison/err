@@ -1,0 +1,2 @@
+/cluster/software/SciPy-bundle/2022.05-foss-2022a/lib/python3.10/site-packages/scipy/optimize/_minpack_py.py:833: OptimizeWarning: Covariance of the parameters could not be estimated
+  warnings.warn('Covariance of the parameters could not be estimated',

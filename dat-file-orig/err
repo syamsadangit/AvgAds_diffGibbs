@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "Avg_diff_adsenergy.py", line 468, in <module>
+    write_AvgEads(Open1,EslabAA7,sysAA7,VibAA7)
+  File "Avg_diff_adsenergy.py", line 237, in write_AvgEads
+    plotAvgAdsene(df1,df2,input_file,system) #CALL FUNCTION
+  File "Avg_diff_adsenergy.py", line 298, in plotAvgAdsene
+    keep='first',ignore_index=True)
+TypeError: drop_duplicates() got an unexpected keyword argument 'ignore_index'

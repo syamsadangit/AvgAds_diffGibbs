@@ -1,0 +1,7 @@
+#Pathway Ereaction(eV) Eactivation(eV) Remarks
+P1vvt 0.56 0.57 3to4to5to3
+P2vvt 1.20 1.22 4to5Ito6IIto4I
+P3vvt 0.68 0.95 4to5Ito6Ito4
+P4vh 0.67 0.83 4to5Ito4
+P5vh 0.74 0.82 4to5to4
+

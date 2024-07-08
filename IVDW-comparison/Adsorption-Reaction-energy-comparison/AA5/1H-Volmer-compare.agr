@@ -1,0 +1,869 @@
+# Grace project file
+#
+@version 50125
+@page size 1870, 1470
+@page scroll 5%
+@page inout 5%
+@link page off
+@map font 0 to "Times-Roman", "Times-Roman"
+@map font 1 to "Times-Italic", "Times-Italic"
+@map font 2 to "Times-Bold", "Times-Bold"
+@map font 3 to "Times-BoldItalic", "Times-BoldItalic"
+@map font 4 to "Helvetica", "Helvetica"
+@map font 5 to "Helvetica-Oblique", "Helvetica-Oblique"
+@map font 6 to "Helvetica-Bold", "Helvetica-Bold"
+@map font 7 to "Helvetica-BoldOblique", "Helvetica-BoldOblique"
+@map font 8 to "Courier", "Courier"
+@map font 9 to "Courier-Oblique", "Courier-Oblique"
+@map font 10 to "Courier-Bold", "Courier-Bold"
+@map font 11 to "Courier-BoldOblique", "Courier-BoldOblique"
+@map font 12 to "Symbol", "Symbol"
+@map font 13 to "ZapfDingbats", "ZapfDingbats"
+@map color 0 to (255, 255, 255), "white"
+@map color 1 to (0, 0, 0), "black"
+@map color 2 to (255, 0, 0), "red"
+@map color 3 to (0, 255, 0), "green"
+@map color 4 to (0, 0, 255), "blue"
+@map color 5 to (255, 255, 0), "yellow"
+@map color 6 to (188, 143, 143), "brown"
+@map color 7 to (220, 220, 220), "grey"
+@map color 8 to (148, 0, 211), "violet"
+@map color 9 to (0, 255, 255), "cyan"
+@map color 10 to (255, 0, 255), "magenta"
+@map color 11 to (255, 165, 0), "orange"
+@map color 12 to (114, 33, 188), "indigo"
+@map color 13 to (103, 7, 72), "maroon"
+@map color 14 to (64, 224, 208), "turquoise"
+@map color 15 to (0, 139, 0), "green4"
+@reference date 0
+@date wrap off
+@date wrap year 1950
+@default linewidth 1.0
+@default linestyle 1
+@default color 1
+@default pattern 1
+@default font 0
+@default char size 1.000000
+@default symbol size 1.000000
+@default sformat "%.8g"
+@background color 0
+@page background fill on
+@timestamp off
+@timestamp 0.03, 0.03
+@timestamp color 1
+@timestamp rot 0
+@timestamp font 0
+@timestamp char size 1.000000
+@timestamp def "Thu Jun 20 12:10:26 2024"
+@with box
+@    box on
+@    box loctype view
+@    box 0.414206185483, 0.568836712914, 0.763790185547, 0.531483457844
+@    box linestyle 1
+@    box linewidth 1.5
+@    box color 15
+@    box fill color 1
+@    box fill pattern 0
+@box def
+@with box
+@    box on
+@    box loctype view
+@    box 0.414206185483, 0.527214514408, 0.656212503737, 0.499466382071
+@    box linestyle 1
+@    box linewidth 1.5
+@    box color 4
+@    box fill color 1
+@    box fill pattern 0
+@box def
+@with box
+@    box on
+@    box loctype view
+@    box 0.775799942714, 0.569903948773, 1.12656153863, 0.532550693703
+@    box linestyle 1
+@    box linewidth 1.5
+@    box color 15
+@    box fill color 1
+@    box fill pattern 0
+@box def
+@with box
+@    box on
+@    box loctype view
+@    box 0.775799942714, 0.528281750267, 1.03804196532, 0.499928495197
+@    box linestyle 1
+@    box linewidth 1.5
+@    box color 4
+@    box fill color 1
+@    box fill pattern 0
+@box def
+@with box
+@    box on
+@    box loctype view
+@    box 0.19604674228, 0.209178228388, 0.435839318546, 0.18249733191
+@    box linestyle 1
+@    box linewidth 1.5
+@    box color 4
+@    box fill color 1
+@    box fill pattern 0
+@box def
+@with box
+@    box on
+@    box loctype view
+@    box 0.19604674228, 0.252934898613, 0.531562135261, 0.216648879402
+@    box linestyle 1
+@    box linewidth 1.5
+@    box color 15
+@    box fill color 1
+@    box fill pattern 0
+@box def
+@with string
+@    string on
+@    string loctype view
+@    string 0.19709404186, 0.188900747064
+@    string color 1
+@    string rot 0
+@    string font 2
+@    string just 0
+@    string char size 0.850000
+@    string def "3H(0)* + H \x\c.\C\f{} 4H(0/I)*"
+@with string
+@    string on
+@    string loctype view
+@    string 0.197096199303, 0.228388473853
+@    string color 1
+@    string rot 0
+@    string font 2
+@    string just 0
+@    string char size 0.850000
+@    string def "3H(0)* + H\s3\NO\S+\N \x\c.\C\f{} 4H(0)* + H\s2\NO"
+@with string
+@    string on
+@    string loctype view
+@    string 0.417253485063, 0.543223052296
+@    string color 1
+@    string rot 0
+@    string font 2
+@    string just 0
+@    string char size 0.850000
+@    string def "4H(0)* + H\s3\NO\S+\N \x\c.\C\f{} 5H*(0/I) + H\s2\NO"
+@with string
+@    string on
+@    string loctype view
+@    string 0.463383209026, 0.5848452508
+@    string color 1
+@    string rot 0
+@    string font 2
+@    string just 0
+@    string char size 0.750000
+@    string def "5H(0)"
+@with string
+@    string on
+@    string loctype view
+@    string 0.579753200433, 0.584845250799
+@    string color 1
+@    string rot 0
+@    string font 2
+@    string just 0
+@    string char size 0.750000
+@    string def "5H(I)"
+@with string
+@    string on
+@    string loctype view
+@    string 0.418300784642, 0.506937033085
+@    string color 1
+@    string rot 0
+@    string font 2
+@    string just 0
+@    string char size 0.850000
+@    string def "4H(0)* + H \x\c.\C\f{} 5H*(0/I)"
+@with string
+@    string on
+@    string loctype view
+@    string 0.77684724229, 0.545357524014
+@    string color 1
+@    string rot 0
+@    string font 2
+@    string just 0
+@    string char size 0.850000
+@    string def "5H(I)* + H\s3\NO\S+\N \x\c.\C\f{} 6H*(I/II) + H\s2\NO"
+@with string
+@    string on
+@    string loctype view
+@    string 0.929911552957, 0.584845250801
+@    string color 1
+@    string rot 0
+@    string font 2
+@    string just 0
+@    string char size 0.750000
+@    string def "6H(I)"
+@with string
+@    string on
+@    string loctype view
+@    string 1.02950749154, 0.583778014941
+@    string color 1
+@    string rot 0
+@    string font 2
+@    string just 0
+@    string char size 0.750000
+@    string def "6H(II)"
+@with string
+@    string on
+@    string loctype view
+@    string 0.77684616357, 0.505869797226
+@    string color 1
+@    string rot 0
+@    string font 2
+@    string just 0
+@    string char size 0.850000
+@    string def "5H(I)* + H \x\c.\C\f{} 6H*(0/I/II)"
+@with string
+@    string on
+@    string loctype view
+@    string 0.822976966257, 0.585912486659
+@    string color 1
+@    string rot 0
+@    string font 2
+@    string just 0
+@    string char size 0.750000
+@    string def "6H(0)"
+@with string
+@    string on
+@    string loctype view
+@    string 0.154111610242, 0.5848452508
+@    string color 1
+@    string rot 0
+@    string font 2
+@    string just 0
+@    string char size 0.750000
+@    string def "4H(0)"
+@with string
+@    string on
+@    string loctype view
+@    string 0.228546469612, 0.5848452508
+@    string color 1
+@    string rot 0
+@    string font 2
+@    string just 0
+@    string char size 0.750000
+@    string def "4H(I)"
+@r0 off
+@link r0 to g0
+@r0 type above
+@r0 linestyle 1
+@r0 linewidth 1.0
+@r0 color 1
+@r0 line 0, 0, 0, 0
+@r1 off
+@link r1 to g0
+@r1 type above
+@r1 linestyle 1
+@r1 linewidth 1.0
+@r1 color 1
+@r1 line 0, 0, 0, 0
+@r2 off
+@link r2 to g0
+@r2 type above
+@r2 linestyle 1
+@r2 linewidth 1.0
+@r2 color 1
+@r2 line 0, 0, 0, 0
+@r3 off
+@link r3 to g0
+@r3 type above
+@r3 linestyle 1
+@r3 linewidth 1.0
+@r3 color 1
+@r3 line 0, 0, 0, 0
+@r4 off
+@link r4 to g0
+@r4 type above
+@r4 linestyle 1
+@r4 linewidth 1.0
+@r4 color 1
+@r4 line 0, 0, 0, 0
+@g0 on
+@g0 hidden false
+@g0 type XY
+@g0 stacked false
+@g0 bar hgap 0.000000
+@g0 fixedpoint off
+@g0 fixedpoint type 0
+@g0 fixedpoint xy 0.000000, 0.000000
+@g0 fixedpoint format general general
+@g0 fixedpoint prec 6, 6
+@with g0
+@    world 3.9, -0.63, 6.7, 0.4
+@    stack world 0, 0, 0, 0
+@    znorm 1
+@    view 0.147298, 0.150000, 1.129280, 0.850000
+@    title ""
+@    title font 0
+@    title size 1.500000
+@    title color 1
+@    subtitle ""
+@    subtitle font 0
+@    subtitle size 1.000000
+@    subtitle color 1
+@    xaxes scale Normal
+@    yaxes scale Normal
+@    xaxes invert off
+@    yaxes invert off
+@    xaxis  on
+@    xaxis  type zero false
+@    xaxis  offset 0.000000 , 0.000000
+@    xaxis  bar on
+@    xaxis  bar color 1
+@    xaxis  bar linestyle 1
+@    xaxis  bar linewidth 1.0
+@    xaxis  label "Hydrogen coverage (n)"
+@    xaxis  label layout para
+@    xaxis  label place auto
+@    xaxis  label char size 1.000000
+@    xaxis  label font 2
+@    xaxis  label color 1
+@    xaxis  label place normal
+@    xaxis  tick on
+@    xaxis  tick major 1
+@    xaxis  tick minor ticks 0
+@    xaxis  tick default 6
+@    xaxis  tick place rounded true
+@    xaxis  tick in
+@    xaxis  tick major size 1.000000
+@    xaxis  tick major color 1
+@    xaxis  tick major linewidth 2.0
+@    xaxis  tick major linestyle 1
+@    xaxis  tick major grid off
+@    xaxis  tick minor color 1
+@    xaxis  tick minor linewidth 2.0
+@    xaxis  tick minor linestyle 1
+@    xaxis  tick minor grid off
+@    xaxis  tick minor size 0.500000
+@    xaxis  ticklabel on
+@    xaxis  ticklabel format general
+@    xaxis  ticklabel prec 5
+@    xaxis  ticklabel formula ""
+@    xaxis  ticklabel append ""
+@    xaxis  ticklabel prepend ""
+@    xaxis  ticklabel angle 0
+@    xaxis  ticklabel skip 0
+@    xaxis  ticklabel stagger 0
+@    xaxis  ticklabel place normal
+@    xaxis  ticklabel offset auto
+@    xaxis  ticklabel offset 0.000000 , 0.010000
+@    xaxis  ticklabel start type auto
+@    xaxis  ticklabel start 0.000000
+@    xaxis  ticklabel stop type auto
+@    xaxis  ticklabel stop 0.000000
+@    xaxis  ticklabel char size 1.000000
+@    xaxis  ticklabel font 2
+@    xaxis  ticklabel color 1
+@    xaxis  tick place both
+@    xaxis  tick spec type none
+@    yaxis  on
+@    yaxis  type zero false
+@    yaxis  offset 0.000000 , 0.000000
+@    yaxis  bar on
+@    yaxis  bar color 1
+@    yaxis  bar linestyle 1
+@    yaxis  bar linewidth 1.0
+@    yaxis  label "Energy (eV)"
+@    yaxis  label layout para
+@    yaxis  label place auto
+@    yaxis  label char size 1.000000
+@    yaxis  label font 2
+@    yaxis  label color 1
+@    yaxis  label place normal
+@    yaxis  tick on
+@    yaxis  tick major 0.2
+@    yaxis  tick minor ticks 1
+@    yaxis  tick default 6
+@    yaxis  tick place rounded true
+@    yaxis  tick in
+@    yaxis  tick major size 1.000000
+@    yaxis  tick major color 1
+@    yaxis  tick major linewidth 2.0
+@    yaxis  tick major linestyle 1
+@    yaxis  tick major grid off
+@    yaxis  tick minor color 1
+@    yaxis  tick minor linewidth 2.0
+@    yaxis  tick minor linestyle 1
+@    yaxis  tick minor grid off
+@    yaxis  tick minor size 0.500000
+@    yaxis  ticklabel on
+@    yaxis  ticklabel format general
+@    yaxis  ticklabel prec 5
+@    yaxis  ticklabel formula ""
+@    yaxis  ticklabel append ""
+@    yaxis  ticklabel prepend ""
+@    yaxis  ticklabel angle 0
+@    yaxis  ticklabel skip 0
+@    yaxis  ticklabel stagger 0
+@    yaxis  ticklabel place normal
+@    yaxis  ticklabel offset auto
+@    yaxis  ticklabel offset 0.000000 , 0.010000
+@    yaxis  ticklabel start type auto
+@    yaxis  ticklabel start 0.000000
+@    yaxis  ticklabel stop type auto
+@    yaxis  ticklabel stop 0.000000
+@    yaxis  ticklabel char size 1.000000
+@    yaxis  ticklabel font 2
+@    yaxis  ticklabel color 1
+@    yaxis  tick place both
+@    yaxis  tick spec type none
+@    altxaxis  off
+@    altyaxis  off
+@    legend on
+@    legend loctype view
+@    legend 0.717101241643, 0.33
+@    legend box color 1
+@    legend box pattern 1
+@    legend box linewidth 2.0
+@    legend box linestyle 1
+@    legend box fill color 0
+@    legend box fill pattern 1
+@    legend font 2
+@    legend char size 1.000000
+@    legend color 1
+@    legend length 4
+@    legend vgap 1
+@    legend hgap 1
+@    legend invert false
+@    frame type 0
+@    frame linestyle 1
+@    frame linewidth 2.0
+@    frame color 1
+@    frame pattern 1
+@    frame background color 0
+@    frame background pattern 0
+@    s0 hidden false
+@    s0 type bar
+@    s0 symbol 0
+@    s0 symbol size 0.750000
+@    s0 symbol color 15
+@    s0 symbol pattern 1
+@    s0 symbol fill color 15
+@    s0 symbol fill pattern 0
+@    s0 symbol linewidth 3.5
+@    s0 symbol linestyle 1
+@    s0 symbol char 65
+@    s0 symbol char font 0
+@    s0 symbol skip 0
+@    s0 line type 0
+@    s0 line linestyle 1
+@    s0 line linewidth 12.0
+@    s0 line color 15
+@    s0 line pattern 1
+@    s0 baseline type 0
+@    s0 baseline off
+@    s0 dropline off
+@    s0 fill type 0
+@    s0 fill rule 0
+@    s0 fill color 1
+@    s0 fill pattern 1
+@    s0 avalue off
+@    s0 avalue type 2
+@    s0 avalue char size 1.000000
+@    s0 avalue font 0
+@    s0 avalue color 1
+@    s0 avalue rot 0
+@    s0 avalue format general
+@    s0 avalue prec 3
+@    s0 avalue prepend ""
+@    s0 avalue append ""
+@    s0 avalue offset 0.000000 , 0.000000
+@    s0 errorbar on
+@    s0 errorbar place both
+@    s0 errorbar color 15
+@    s0 errorbar pattern 1
+@    s0 errorbar size 1.000000
+@    s0 errorbar linewidth 1.0
+@    s0 errorbar linestyle 1
+@    s0 errorbar riser linewidth 1.0
+@    s0 errorbar riser linestyle 1
+@    s0 errorbar riser clip off
+@    s0 errorbar riser clip length 0.100000
+@    s0 comment "Cols 1:3"
+@    s0 legend  "Volmer Reaction Energy\n(proton corrected)"
+@    s1 hidden true
+@    s1 type xy
+@    s1 symbol 0
+@    s1 symbol size 0.750000
+@    s1 symbol color 11
+@    s1 symbol pattern 1
+@    s1 symbol fill color 11
+@    s1 symbol fill pattern 1
+@    s1 symbol linewidth 1.0
+@    s1 symbol linestyle 1
+@    s1 symbol char 65
+@    s1 symbol char font 0
+@    s1 symbol skip 0
+@    s1 line type 0
+@    s1 line linestyle 1
+@    s1 line linewidth 12.0
+@    s1 line color 11
+@    s1 line pattern 1
+@    s1 baseline type 0
+@    s1 baseline off
+@    s1 dropline on
+@    s1 fill type 2
+@    s1 fill rule 0
+@    s1 fill color 1
+@    s1 fill pattern 1
+@    s1 avalue off
+@    s1 avalue type 2
+@    s1 avalue char size 1.000000
+@    s1 avalue font 0
+@    s1 avalue color 1
+@    s1 avalue rot 0
+@    s1 avalue format general
+@    s1 avalue prec 3
+@    s1 avalue prepend ""
+@    s1 avalue append ""
+@    s1 avalue offset 0.000000 , 0.000000
+@    s1 errorbar on
+@    s1 errorbar place both
+@    s1 errorbar color 11
+@    s1 errorbar pattern 1
+@    s1 errorbar size 1.000000
+@    s1 errorbar linewidth 1.0
+@    s1 errorbar linestyle 1
+@    s1 errorbar riser linewidth 1.0
+@    s1 errorbar riser linestyle 1
+@    s1 errorbar riser clip off
+@    s1 errorbar riser clip length 0.100000
+@    s1 comment "Cols 1:2"
+@    s1 legend  "Differential Adsorption \nEnergy i = 2"
+@    s2 hidden false
+@    s2 type bar
+@    s2 symbol 0
+@    s2 symbol size 0.750000
+@    s2 symbol color 4
+@    s2 symbol pattern 1
+@    s2 symbol fill color 4
+@    s2 symbol fill pattern 1
+@    s2 symbol linewidth 1.0
+@    s2 symbol linestyle 1
+@    s2 symbol char 65
+@    s2 symbol char font 0
+@    s2 symbol skip 0
+@    s2 line type 0
+@    s2 line linestyle 1
+@    s2 line linewidth 12.0
+@    s2 line color 4
+@    s2 line pattern 1
+@    s2 baseline type 0
+@    s2 baseline off
+@    s2 dropline off
+@    s2 fill type 0
+@    s2 fill rule 0
+@    s2 fill color 1
+@    s2 fill pattern 1
+@    s2 avalue off
+@    s2 avalue type 2
+@    s2 avalue char size 1.000000
+@    s2 avalue font 0
+@    s2 avalue color 1
+@    s2 avalue rot 0
+@    s2 avalue format general
+@    s2 avalue prec 3
+@    s2 avalue prepend ""
+@    s2 avalue append ""
+@    s2 avalue offset 0.000000 , 0.000000
+@    s2 errorbar on
+@    s2 errorbar place both
+@    s2 errorbar color 4
+@    s2 errorbar pattern 1
+@    s2 errorbar size 1.000000
+@    s2 errorbar linewidth 1.0
+@    s2 errorbar linestyle 1
+@    s2 errorbar riser linewidth 1.0
+@    s2 errorbar riser linestyle 1
+@    s2 errorbar riser clip off
+@    s2 errorbar riser clip length 0.100000
+@    s2 comment "Cols 1:2"
+@    s2 legend  "Differential Adsorption \nEnergy"
+@    s3 hidden false
+@    s3 type xy
+@    s3 symbol 0
+@    s3 symbol size 1.000000
+@    s3 symbol color 1
+@    s3 symbol pattern 1
+@    s3 symbol fill color 1
+@    s3 symbol fill pattern 0
+@    s3 symbol linewidth 1.0
+@    s3 symbol linestyle 1
+@    s3 symbol char 65
+@    s3 symbol char font 0
+@    s3 symbol skip 0
+@    s3 line type 1
+@    s3 line linestyle 1
+@    s3 line linewidth 2.0
+@    s3 line color 1
+@    s3 line pattern 1
+@    s3 baseline type 0
+@    s3 baseline off
+@    s3 dropline off
+@    s3 fill type 0
+@    s3 fill rule 0
+@    s3 fill color 1
+@    s3 fill pattern 1
+@    s3 avalue off
+@    s3 avalue type 2
+@    s3 avalue char size 1.000000
+@    s3 avalue font 0
+@    s3 avalue color 1
+@    s3 avalue rot 0
+@    s3 avalue format general
+@    s3 avalue prec 3
+@    s3 avalue prepend ""
+@    s3 avalue append ""
+@    s3 avalue offset 0.000000 , 0.000000
+@    s3 errorbar on
+@    s3 errorbar place both
+@    s3 errorbar color 1
+@    s3 errorbar pattern 1
+@    s3 errorbar size 1.000000
+@    s3 errorbar linewidth 1.0
+@    s3 errorbar linestyle 1
+@    s3 errorbar riser linewidth 1.0
+@    s3 errorbar riser linestyle 1
+@    s3 errorbar riser clip off
+@    s3 errorbar riser clip length 0.100000
+@    s3 comment "/cluster/home/syams/AvgAds_diffGibbs/IVDW-comparison/Adsorption-Reaction-energy-comparison/compare-H1-H2-reaction.agr"
+@    s3 legend  ""
+@target G0.S0
+@type bar
+4 -0.57544413
+5 0.17687495
+5.3 0.1902393
+6.3 0.35081795
+6.6 0.19282949
+&
+@target G0.S1
+@type xy
+2 -1.2255969
+3 -1.180056
+4 -1.1240551
+5 -0.49593848
+5.3 -0.47460396
+6 0.14256331
+6.3 0.30464001
+6.6 0.23700873
+7 0.19633687
+&
+@target G0.S2
+@type bar
+1 -0.62264839
+2 -0.60294853
+3 -0.5771075
+4 -0.5469476
+4.3 0.07300328
+5 0.05100912
+5.3 0.07234364
+6 0.09155419
+6.3 0.23229637
+6.6 0.16466509
+7 0.10478268
+&
+@target G0.S3
+@type xy
+0 0
+0.040201005 0
+0.08040201 0
+0.12060302 0
+0.16080402 0
+0.20100503 0
+0.24120603 0
+0.28140704 0
+0.32160804 0
+0.36180905 0
+0.40201005 0
+0.44221106 0
+0.48241206 0
+0.52261307 0
+0.56281407 0
+0.60301508 0
+0.64321608 0
+0.68341709 0
+0.72361809 0
+0.7638191 0
+0.8040201 0
+0.84422111 0
+0.88442211 0
+0.92462312 0
+0.96482412 0
+1.0050251 0
+1.0452261 0
+1.0854271 0
+1.1256281 0
+1.1658291 0
+1.2060302 0
+1.2462312 0
+1.2864322 0
+1.3266332 0
+1.3668342 0
+1.4070352 0
+1.4472362 0
+1.4874372 0
+1.5276382 0
+1.5678392 0
+1.6080402 0
+1.6482412 0
+1.6884422 0
+1.7286432 0
+1.7688442 0
+1.8090452 0
+1.8492462 0
+1.8894472 0
+1.9296482 0
+1.9698492 0
+2.0100503 0
+2.0502513 0
+2.0904523 0
+2.1306533 0
+2.1708543 0
+2.2110553 0
+2.2512563 0
+2.2914573 0
+2.3316583 0
+2.3718593 0
+2.4120603 0
+2.4522613 0
+2.4924623 0
+2.5326633 0
+2.5728643 0
+2.6130653 0
+2.6532663 0
+2.6934673 0
+2.7336683 0
+2.7738693 0
+2.8140704 0
+2.8542714 0
+2.8944724 0
+2.9346734 0
+2.9748744 0
+3.0150754 0
+3.0552764 0
+3.0954774 0
+3.1356784 0
+3.1758794 0
+3.2160804 0
+3.2562814 0
+3.2964824 0
+3.3366834 0
+3.3768844 0
+3.4170854 0
+3.4572864 0
+3.4974874 0
+3.5376884 0
+3.5778894 0
+3.6180905 0
+3.6582915 0
+3.6984925 0
+3.7386935 0
+3.7788945 0
+3.8190955 0
+3.8592965 0
+3.8994975 0
+3.9396985 0
+3.9798995 0
+4.0201005 0
+4.0603015 0
+4.1005025 0
+4.1407035 0
+4.1809045 0
+4.2211055 0
+4.2613065 0
+4.3015075 0
+4.3417085 0
+4.3819095 0
+4.4221106 0
+4.4623116 0
+4.5025126 0
+4.5427136 0
+4.5829146 0
+4.6231156 0
+4.6633166 0
+4.7035176 0
+4.7437186 0
+4.7839196 0
+4.8241206 0
+4.8643216 0
+4.9045226 0
+4.9447236 0
+4.9849246 0
+5.0251256 0
+5.0653266 0
+5.1055276 0
+5.1457286 0
+5.1859296 0
+5.2261307 0
+5.2663317 0
+5.3065327 0
+5.3467337 0
+5.3869347 0
+5.4271357 0
+5.4673367 0
+5.5075377 0
+5.5477387 0
+5.5879397 0
+5.6281407 0
+5.6683417 0
+5.7085427 0
+5.7487437 0
+5.7889447 0
+5.8291457 0
+5.8693467 0
+5.9095477 0
+5.9497487 0
+5.9899497 0
+6.0301508 0
+6.0703518 0
+6.1105528 0
+6.1507538 0
+6.1909548 0
+6.2311558 0
+6.2713568 0
+6.3115578 0
+6.3517588 0
+6.3919598 0
+6.4321608 0
+6.4723618 0
+6.5125628 0
+6.5527638 0
+6.5929648 0
+6.6331658 0
+6.6733668 0
+6.7135678 0
+6.7537688 0
+6.7939698 0
+6.8341709 0
+6.8743719 0
+6.9145729 0
+6.9547739 0
+6.9949749 0
+7.0351759 0
+7.0753769 0
+7.1155779 0
+7.1557789 0
+7.1959799 0
+7.2361809 0
+7.2763819 0
+7.3165829 0
+7.3567839 0
+7.3969849 0
+7.4371859 0
+7.4773869 0
+7.5175879 0
+7.5577889 0
+7.5979899 0
+7.638191 0
+7.678392 0
+7.718593 0
+7.758794 0
+7.798995 0
+7.839196 0
+7.879397 0
+7.919598 0
+7.959799 0
+8 0
+&
