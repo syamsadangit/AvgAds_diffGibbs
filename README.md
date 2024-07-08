@@ -1,6 +1,8 @@
 # Overview
 
-The Python code `Avg_diff_adsenergy.py` is designed to analyze vibrational energy, adsorption free energy, Gibbs free energy per hydrogen, and differential Gibbs free energy of hydrogen adsorption as a function of coverage on slab surfaces. The calculations and analysis are based on inputs of vibrational energy data, adsorption energy data, and other system-specific parameters. Link for citations: https://doi.org/10.5281/zenodo.12684848
+The Python code `Avg_diff_adsenergy.py` is designed to analyze vibrational energy, adsorption free energy, Gibbs free energy per hydrogen, and differential Gibbs free energy of hydrogen adsorption as a function of coverage on slab surfaces. The calculations and analysis are based on inputs of vibrational energy data, adsorption energy data, and other system-specific parameters. 
+
+Link for citations: https://doi.org/10.5281/zenodo.12684848
 
 # Usage
 
