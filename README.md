@@ -1,6 +1,3 @@
-Certainly! Here is the complete markdown content formatted as a single block for easy copying:
-
-```markdown
 # Overview
 
 The Python code `Avg_diff_adsenergy.py` is designed to analyze vibrational energy, adsorption free energy, Gibbs free energy per hydrogen, and differential Gibbs free energy of hydrogen adsorption as a function of coverage on slab surfaces. The calculations and analysis are based on inputs of vibrational energy data, adsorption energy data, and other system-specific parameters.
@@ -16,21 +13,19 @@ To use these functions, ensure you have the necessary input files containing vib
 This file should contain the vibrational energy data needed for the `VibEneCollect` function. The file should be in a specific format where each line consists of vibrational energies followed by remarks, separated by spaces. The last element of each line should be the remark with a "#" character.
 
 **Example format:**
-```
 0.123 0.456 0.789 #remark1
 0.321 0.654 0.987 #remark2
-```
+
 
 ### Adsorption Energy File
 
 This file should contain the adsorption energy data needed for the `AvgEads`, `diffGibbs`, `cleandf`, `write_AvgEads`, and `write_diffGibbs` functions. The file should be a CSV file with three columns: `nH`, `Eads`, and `Remarks`.
 
 **Example format:**
-```
 nH,Eads,Remarks
 1,0.123,remark1
 2,0.456,remark2
-```
+
 
 ### Reference Slab Energy
 
@@ -178,5 +173,4 @@ You will need the energy of the optimized adsorbed slab and the reference slab. 
 - `system`: System name/identifier.  
 **Outputs:**  
 - None (saves plot to a file).
-```
 
